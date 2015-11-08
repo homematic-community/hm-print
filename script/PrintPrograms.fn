@@ -1,0 +1,86 @@
+function ::PrintProgram()
+{
+  if( system.IsVar("tmpPrgIDAL") )
+  {
+    object pid = dom.GetObject( system.GetVar("tmpPrgIDAL") );
+    object oPrg = dom.GetObject(pid);
+		if(prg)
+		{
+		  object oR = dom.GetObject(oPrg.Rule().ID());
+			if (oR)
+			{
+				var subruleex = true;
+		    if (subruleex)
+		    {
+		      string id = oR.ID();
+		      object oSR = oR.RuleSubRule();
+					if (oSR) {
+						subruleex = true;
+						oR = oSR;
+					} else {
+						subruleex = false;
+					}
+			    #inc("/esp/rule.inc");
+				}
+		  }
+		}
+	}
+}
+
+function ::GetAllPrograms()
+{
+	string s_prgID;
+	object oPrg;
+	var i = 0;
+	foreach (s_prgID, dom.GetObject(ID_PROGRAMS).EnumUsedIDs()) {
+		object oPrg = dom.GetObject(s_prgID);
+		Write("|" # s_prgID # "\n" # oPrg.Name() # "\n" # oPrg.PrgInfo() # "\n" # oPrg.Internal() # "\n" # oPrg.Rule().ID());
+		i = i + 1;
+		if (i == 1000) {
+	  	quit;
+		}
+	}
+}
+
+function ::GetAllSysPrograms()
+{
+	string s_prgID;
+	object oPrg;
+	var i = 0;
+	foreach (s_prgID, dom.GetObject(ID_PROGRAMS).EnumIDs()) {
+		object oPrg = dom.GetObject(s_prgID);
+		Write("|" # s_prgID # "\n" # oPrg.Name() # "\n" # oPrg.PrgInfo() # "\n" # oPrg.Internal() # "\n" # oPrg.Rule().ID());
+		i = i + 1;
+		if (i == 1000) {
+	  	quit;
+		}
+	}
+}
+
+function ::LoadRule()
+{
+  if( system.IsVar("pid") && system.IsVar("rid") )
+  {
+    object oR = dom.GetObject( system.GetVar("rid") );
+    if( oR )
+    {
+      object oSR = oR.RuleSubRule();
+      if( oSR )
+      {
+        Write( "false|"#oSR.ID() );
+      }
+      else
+      {
+        Write( "true" );
+      }
+      Write("|" # system.GetVar("pid") # "|");
+      string id = oR.ID();
+      #inc("/esp/rule.inc");
+    }
+    else
+    {
+      Write( "error" );
+    }
+  }
+  return;
+}

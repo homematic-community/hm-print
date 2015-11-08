@@ -1,0 +1,9 @@
+#!/bin/sh
+
+mkdir /mnt
+mount -t ubifs ubi1:user /mnt
+
+cp -R script /mnt/etc/config/addons/www/
+cp -p programmedrucken /mnt/etc/config/rc.d/
+
+umount /mnt

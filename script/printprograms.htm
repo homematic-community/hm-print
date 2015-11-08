@@ -1,0 +1,155 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+	<link href="/addons/script/druckansicht.css" type="text/css" rel="stylesheet">
+	<script src="/addons/script/functions.js" type="text/javascript"></script>
+</head>
+<body>
+<script type="text/javascript" src="/webui/js/extern/prototype.js"></script>
+<script type="text/javascript" language="javascript">
+
+var SessionId = "";
+
+if (location.search)
+{
+	if (location.search.indexOf("sid=") > -1)
+	{
+		var teil = location.search.substring(location.search.indexOf("sid=") + 4);
+		if (teil.indexOf("&") > -1)
+			SessionId = teil.substring(0, teil.indexOf("&"));
+		else
+			SessionId = teil;			
+	}
+}
+
+getPrograms = function()
+{
+  var req = xhr.create();
+  req.open("POST", "exec.cgi", false);
+  
+  var s  = "string s_prgID;";
+      s += "object oPrg;";
+      s += "var i = 0;";
+      s += "foreach (s_prgID, dom.GetObject(ID_PROGRAMS).EnumUsedIDs()) {";
+      s += "  object oPrg = dom.GetObject(s_prgID);";
+      s += "  Write(\"|\" # s_prgID # \"\n\" # oPrg.Name() # \"\n\" # oPrg.PrgInfo() # \"\n\" # oPrg.Internal());";
+      s += "  i = i + 1;";
+      s += "  if (i == 1) {";
+      s += "    quit;";
+      s += "  }";
+
+      s += "}";
+      
+  req.send(s);
+  var programs = getStdout(req.responseText).split("|");
+  
+  for (var i = 0; i < programs.length; i++)
+  {
+  	if (programs[i] != "")
+  	{
+  		var parray = programs[i].split("\n");
+  		var pid = parray[0];
+  		//alert("-0:" + pid + "-1:" + parray[1] + "-2:" + parray[2] + "-3:" + parray[3] + "-");
+		  document.write("<div id=\"prgcontent" + pid + "\" style=\"page-break-before:always\">");
+  		
+		  var p  = "<table id=\"ProgramTable" + pid + "\" class=\"filterTable tTable\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\">";
+		      p += "  <thead>";
+		      p += "    <tr>";
+		      p += "      <td class=\"thCell CLASS04802\" >${thName}</td>";
+		      p += "      <td class=\"thCell CLASS04802\" >${thDescription}</td>";
+		      p += "      <td class=\"thCell CLASS04802\" >${thProgramCondition}</td>";
+		      p += "      <td class=\"thCell CLASS04802\" >${thProgramActivity}</td>";
+		      p += "      <td class=\"thCell CLASS04802\" >${thAction}</td>";
+		      p += "    </tr>";
+		      p += "  </thead>";
+		      p += "  <tbody>";
+		      p += "    <tr class=\"CLASS04803\">";
+		      p += "      <td class=\"tBodyCell bgWhite taCenter\" id=\"prg" + pid + "name\">" + parray[1] + "</td>";
+		      p += "      <td class=\"tBodyCell bgWhite taCenter\" id=\"prg" + pid + "desc\" colspan=\"3\">" + parray[2] + "</td>";
+		      p += "      <td class=\"tBodyCell bgWhite\"><input type=\"checkbox\" id=\"p" + pid + "_systeminternal\" " + (parray[3] ? "true" : "false") + "\" /><label for=\"p" + pid + "_systeminternal\">system intern</label></td>";
+		      p += "    </tr>";
+		      p += "    <tr>";
+		      p += "      <td colspan=\"5\">";
+		      p += "        <div id=\"prgrulecontent" + pid + "\">";
+		
+		      /*p += "  system.SetSessionVar(\"tmpPrgIDAL\", oPrg.ID());";
+		      p += "  Call(\"/esp/PrintPrograms.fn::PrintProgram()\")";*/
+		  
+		  /*req.open("POST", "exec.cgi", false);
+		  req.send(p);
+			document.write(getStdout(req.responseText));*/
+			document.write(p);
+		
+      document.write("          </div>");
+      document.write("        </td>");
+      document.write("      </tr>");
+      document.write("    </tbody>");
+      document.write("  </table>");
+      document.write("</div>");
+      document.write("</p>");
+      
+      alert("print: " + programs[i]);
+      PrintProgram(pid);
+	  }
+	  
+  }
+
+  //ClearPage(document);
+};
+
+xhr = 
+{
+
+  create: function()
+  {
+    xhr.create = xhr._create();
+    return xhr.create();
+  },
+  
+  _create: function()
+  {
+    var fn = 
+    [
+      function() { return new XMLHttpRequest(); },
+      function() { return new ActiveXObject("Microsoft.XMLHTTP"); },
+      function() { return new ActiveXObject("Msxml2.XMLHTTP"); }
+    ];
+    
+    for (var i = 0, len = fn.length; i < len; i ++)
+    {
+      try
+      {
+        fn[i]();
+        return fn[i];
+      }
+      catch (ex) { }
+    }
+  
+    throw new Error("XMLHttpRequest not supported");
+  
+  }
+
+};
+
+getStdout = function(textOutput)
+{
+  var result = "";
+  
+  try
+  {
+    var obj = eval("(" + textOutput + ")");
+    return obj["STDOUT"];
+  }
+  catch (ex)
+  {
+    result = "INVALID JSON:<br><br>" + textOutput;
+  }
+
+  return result;
+};
+
+getPrograms();
+
+</script>
+</body>
+</html>
