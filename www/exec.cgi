@@ -14,6 +14,12 @@ proc toString { str } {
     "\n"  "\\n" 
     "\r"  "\\r" 
     "\t"  "\\t" 
+    "\ä"  "\\&auml"
+    "\Ä" "\\&Auml"
+    "\ö" "\\&ouml"
+    "\Ö" "\\&Ouml"
+    "\ü" "\\&uuml"
+    "\Ü" "\\&Uuml"
   }
   return "\"[string map $map $str]\""
 }
