@@ -1,0 +1,6644 @@
+* {
+    font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif !important;
+    font-size: 12px !important;
+}
+html, body {
+    background-color: #ffffff;
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 29.7cm;
+}
+p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+ol {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+ul {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+ul ul {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+a img {
+    border: 0 none;
+}
+pre{
+    line-height: 20px;
+    margin-left: 30px;
+    background-color: #FFF7AA;
+    max-width: 28.7cm;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+#navbar {
+    background-color: #182C6E;
+    border-bottom: 5px solid white;
+    margin: 0;
+    width: 100%;
+}
+#content {
+    background-color: #182C6E;
+    height: 70%;
+    overflow: auto;
+}
+#header {
+    background-color: #182C6E;
+    color: #000000;
+    height: 15%;
+}
+#footer {
+    background-color: #182C6E;
+    border-top: 5px solid white;
+    color: #000000;
+    height: 15%;
+}
+#login_content {
+    padding-top: 20px;
+}
+#LoginMask {
+    background-color: #9BA6BF;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+}
+#LoginMask input {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+#UserName {
+    color: white;
+    vertical-align: top;
+}
+#PagePath {
+    color: white;
+    vertical-align: bottom;
+}
+#PagePath span {
+    cursor: pointer;
+}
+#contentLeft {
+    vertical-align: top;
+}
+#contentRight {
+    border-left: 10px solid white;
+    vertical-align: top;
+}
+#separator {
+    background-color: white;
+    color: white;
+    height: 5px;
+    width: 100%;
+}
+#ButtonTable td {
+    background-color: #5D6373;
+    cursor: pointer;
+    height: 40px;
+    text-align: center;
+}
+#tblStatus {
+    height: 100%;
+    table-layout: fixed;
+    width: 1200px;
+}
+#tblStatus td {
+    background-color: #9BA6BF;
+    color: #000000;
+    vertical-align: top;
+}
+#chkCell {
+    background-color: white;
+}
+#tblListFold {
+    background-color: #182C6E;
+}
+#chnListBody td {
+}
+#chnListBody th {
+}
+.clickable {
+    cursor: pointer;
+}
+.DesktopLabel {
+    background-color: #C0C0C0;
+    border: 1px solid #000000;
+    font-weight: bold;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 3px;
+    text-align: center;
+    width: auto;
+}
+.SmallLogo {
+    margin-left: 0;
+    margin-top: 6px;
+}
+.SmallLogoLog {
+    left: 18px;
+    position: absolute;
+    top: 12px;
+}
+.LargeLogo {
+    left: 480px;
+    position: absolute;
+    top: 180px;
+}
+.Button {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 1px;
+    text-align: center;
+    width: 200px;
+}
+.ButtonStatusRooms {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    color: #000000;
+    height: 100px;
+    width: 100px;
+}
+.ButtonStatusRoomsSelected {
+    background-color: #3678C9;
+    border: 1px solid #000000;
+    color: white;
+    height: 100px;
+    width: 100px;
+}
+.ButtonStatusRoomsPic {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    height: 100px;
+    text-align: center;
+    width: 100px;
+}
+.ButtonStatusRoomsPicSelected {
+    background-color: #3678C9;
+    border: 1px solid #000000;
+    color: white;
+    height: 100px;
+    text-align: center;
+    width: 100px;
+}
+.filterTable {
+    empty-cells: show;
+}
+.filterTable th {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    height: 40px;
+    text-align: center;
+}
+.filterTable td {
+    border: 1px solid #000000;
+    color: #000000;
+    height: 40px;
+    text-align: center;
+}
+.ButtonLargeFont {
+    height: 80px;
+    line-height: 40px;
+}
+.HeaderTitle {
+    color: white;
+    font-weight: bold;
+}
+.NavButton {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    width: 130px;
+}
+.NavButton2 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    height: 42px;
+    line-height: 21px;
+    text-align: center;
+    width: 130px;
+}
+.NavButtonSelected {
+    background-color: #3678C9;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    vertical-align: middle;
+    width: 130px;
+}
+.NavButtonSelected2 {
+    background-color: #3678C9;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    height: 42px;
+    line-height: 21px;
+    text-align: center;
+    vertical-align: middle;
+    width: 140px;
+}
+.Messages {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 250px;
+}
+.Messages_Selected {
+    background-color: #3678C9;
+}
+.StdTable {
+    height: 100%;
+    width: 100%;
+}
+.StdTable td {
+    background-color: #9BA6BF;
+    color: #000000;
+    text-align: left;
+    vertical-align: top;
+}
+.StdTableBtn {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    height: 70px;
+    line-height: 70px;
+    margin: 5px;
+    overflow: hidden;
+    text-align: center;
+}
+.StdTableBtn2 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    height: 70px;
+    line-height: 35px;
+    margin: 5px;
+    overflow: hidden;
+    text-align: center;
+}
+.HeaderBg {
+    background-color: #9BA6BF;
+    color: #000000;
+    height: 30px;
+    white-space: nowrap;
+    width: 100%;
+}
+.borderBottomHist {
+    border-bottom: 1px solid #000000;
+}
+.divLog {
+    color: #000000;
+    height: 75%;
+    overflow: auto;
+    width: 100%;
+}
+.tblList {
+    empty-cells: show;
+    margin-top: 20px;
+    width: 100%;
+}
+.tblList th {
+    background-color: #5D6373;
+    color: white;
+    font-weight: normal;
+}
+.Sort {
+    cursor: pointer;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+.SortSelected {
+    background-color: #3678C9;
+    cursor: pointer;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+.pt11 {
+    padding-top: 11px;
+}
+.tblList td {
+    color: #000000;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+}
+.popupTitle {
+    background-color: white;
+    border: 1px solid #000000;
+    color: #000000;
+    padding-left: 4px;
+    width: 99.4%;
+}
+* html .popupTitle {
+    background-color: white;
+    border: 1px solid #000000;
+    color: #000000;
+    padding-left: 4px;
+    width: 100%;
+}
+.popupTable {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    empty-cells: show;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+.popupTableScript {
+    border: 1px solid #000000;
+    color: white;
+    empty-cells: show;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+.popupTableRow {
+    border-bottom: 1px solid #5D6373;
+    border-top: 1px solid #5D6373;
+}
+.scriptButton {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    text-align: center;
+    width: 10%;
+}
+.popupWhiteCells {
+    background-color: white;
+    color: #000000;
+    font-weight: normal;
+}
+.popupWhiteCells {
+    cursor: pointer;
+}
+.popupGrayCells {
+    background-color: #9BA6BF;
+    color: #000000;
+    font-weight: normal;
+}
+.popupControls {
+    background-color: white;
+    border: 1px solid #000000;
+    width: 100%;
+}
+.popupControls div {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+.helpViewer {
+    background-color: white;
+    color: #000000;
+    height: 100%;
+    width: 100%;
+}
+.ChnListTbl {
+    background-color: #000000;
+    width: 100%;
+}
+.ChnListTbl td {
+    background-color: #F0F0F0;
+    color: #000000;
+    height: 50px;
+}
+.ChnListNav {
+    background-color: #5D6373;
+    color: white;
+    font-weight: normal;
+    height: 30px;
+}
+.ChnListNavSelected {
+    background-color: #3678C9;
+    color: white;
+    font-weight: normal;
+    height: 30px;
+}
+.FilterBtn {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+.FilterBtnActive {
+    background-color: #3678C9;
+}
+.FilterSubMenu {
+    background-color: #9BA6BF;
+    border: 1px solid #000000;
+    color: white;
+    overflow: auto;
+    position: absolute;
+    z-index: 500;
+}
+.FilterSubMenu td {
+    background-color: #9BA6BF;
+    border: medium none;
+    color: white;
+    height: 15px;
+}
+.FilterSetButton {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 6px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 90%;
+    z-index: 501;
+}
+.ControlBtnOff {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #5D6373;
+    border-color: #5D6373 #5D6373 #000000 #000000;
+    border-image: none;
+    border-style: inset inset solid solid;
+    border-width: 4px 4px 1px 1px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.ControlBtnOn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #3678C9;
+    border-color: #3678C9 #3678C9 #000000 #000000;
+    border-image: none;
+    border-style: inset inset solid solid;
+    border-width: 4px 4px 1px 1px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.PercBtn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #5D6373;
+    border-color: #5D6373 #5D6373 #000000 #000000;
+    border-image: none;
+    border-style: inset inset solid solid;
+    border-width: 4px 4px 1px 1px;
+    color: white;
+    font-weight: bold;
+    height: 96px;
+    text-align: center;
+    width: 96px;
+}
+.ControlBtnInfo {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+.ControlBtnPushed {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #5D6373;
+    border-color: #FFFF00 #FFFF00 #000000 #000000;
+    border-image: none;
+    border-style: inset inset solid solid;
+    border-width: 4px 4px 1px 1px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+}
+#id_progressbar_wrapper {
+    background-color: #F0F0F0;
+    color: #000000;
+}
+.popupTableRowGray {
+    background-color: #9BA6BF;
+    border-bottom: 1px solid #5D6373;
+    border-top: 1px solid #5D6373;
+    color: #000000;
+    margin: 0;
+}
+.popupTableRowWhite {
+    background-color: white;
+    border-bottom: 1px solid #5D6373;
+    border-top: 1px solid #5D6373;
+    color: #000000;
+    margin: 0;
+}
+.popupTableHeaderRow {
+    background-color: gray;
+    border: 1px solid black;
+    color: white;
+    margin: 0;
+}
+.popupTableHeaderRow th {
+    background-color: gray;
+    color: white;
+    margin: 0;
+}
+.popupTableHeaderRow td {
+    background-color: gray;
+    color: white;
+    margin: 0;
+}
+.StdButton {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+}
+.StdButtonInactive {
+    background-color: #F0F0F0;
+    border: 1px solid gray;
+    color: white;
+}
+.TestButton {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+    text-align: center;
+}
+.TestButtonDisabled {
+    background-color: #F0F0F0;
+    border: 1px solid gray;
+    color: white;
+    cursor: default;
+    margin: 5px;
+    text-align: center;
+}
+.OkButton {
+    background-color: #00C300;
+    border: 1px solid #000000;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+.OkButtonRunning {
+    background-color: #FFFF00;
+    border: 1px solid #000000;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+.TestDate {
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid #000000;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+.FooterButton {
+    background-color: #0048FF;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    display: none;
+}
+.FooterButtonLarge {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    height: 15px;
+    line-height: 18px;
+    width: 40px;
+}
+.TblHeaderUserConfig {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    height: 50px;
+    text-align: center;
+}
+.TblFilterUserConfig {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    height: 20px;
+    text-align: center;
+}
+.TblUserConfig {
+    background-color: #9BA6BF;
+    border: 1px solid #000000;
+    color: #000000;
+    text-align: center;
+}
+.tblUserData td {
+    color: #000000;
+}
+.TblUserAdministration {
+    background-color: #9BA6BF;
+    border: 1px solid #000000;
+    color: #000000;
+    text-align: center;
+}
+.StatViewTbl {
+    empty-cells: show;
+}
+.StatViewTbl td {
+    border: 1px solid #000000;
+}
+.ChannelStatusTbl {
+    background-color: #9BA6BF;
+    border: 1px solid #000000;
+    color: #000000;
+    empty-cells: show;
+    height: 100px;
+    text-align: center;
+}
+.picDiv {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 50px;
+}
+.ChannelTblPopup {
+    background-color: #9BA6BF;
+    border: 1px solid #000000;
+    color: #000000;
+    height: 60px;
+    text-align: center;
+}
+.SysVarsTblPopup {
+    background-color: #9BA6BF;
+    color: #000000;
+    height: 60px;
+    text-align: center;
+}
+.WhiteBkgChannelPopup {
+    background-color: white;
+    border: 1px solid #000000;
+    color: #000000;
+    empty-cells: show;
+    height: 60px;
+    text-align: center;
+}
+.RoomFuncChooser {
+    background-color: #9BA6BF;
+    color: #000000;
+}
+.RoomFuncChooser td {
+    color: #000000;
+}
+.SelectBox {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+}
+.BigFont {
+    font-weight: bold;
+}
+.Rule {
+    line-height: 18px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 4px;
+    text-align: left;
+    width: 29.7cm;
+
+}
+.Condition {
+    background-color: #d4ffe5;
+    border: 1px solid #000000;
+    padding: 4px;
+    text-align: left;
+}
+.tHeaderCell {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    height: 40px;
+    padding: 4px;
+    text-align: left;
+    vertical-align: middle;
+}
+.tSubHeaderCell {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    height: 20px;
+    padding: 4px;
+    text-align: center;
+    vertical-align: middle;
+}
+.tHeaderCellSort {
+    background-color: #3678C9;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    height: 100%;
+    padding: 4px;
+    text-align: center;
+    vertical-align: middle;
+}
+.tHeaderCellSortSelected {
+    background-color: #3678C9;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    height: 100%;
+    padding: 4px;
+    text-align: center;
+    vertical-align: middle;
+}
+.tBodyCell {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    color: #000000;
+    height: 40px;
+    padding: 4px;
+    text-align: left;
+}
+.tTable {
+    border: 1px solid #000000;
+    empty-cells: show;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+    width: 97%;
+}
+.taCenter {
+    text-align: center;
+}
+.viewTbl {
+    background-color: #F0F0F0;
+    border: medium none;
+}
+.ctrlTbl {
+    background-color: white;
+    border: medium none;
+}
+.ctrlTbl td {
+    background-color: inherit;
+    border: medium none;
+    color: white;
+    height: auto;
+}
+div.table {
+    border-collapse: collapse;
+    display: table;
+}
+div.tr {
+    display: table-row;
+}
+div.td {
+    display: table-cell;
+}
+div.thead {
+    display: table-header-group;
+}
+div.tbody {
+    display: table-row-group;
+}
+div.tfoot {
+    display: table-footer-group;
+}
+div.col {
+    display: table-column;
+}
+div.colgroup {
+    display: table-column-group;
+}
+div.th {
+    display: table-cell;
+}
+div.caption {
+    display: table-caption;
+}
+.tMain {
+    border: 1px solid #000000;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.tHeader {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    empty-cells: show;
+    height: 40px;
+}
+.tFilter {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    empty-cells: show;
+    height: auto;
+    text-align: center;
+}
+.tClick {
+    cursor: pointer;
+}
+.tCell {
+    background-color: #9BA6BF;
+    border: 1px solid #000000;
+    color: #000000;
+    empty-cells: show;
+    text-align: center;
+}
+.bcWhitePic {
+    background-color: white;
+}
+.bcWhite {
+    background-color: #F0F0F0;
+}
+.loginErrorBox {
+    background-color: #9BA6BF;
+    border: 4px solid red;
+    color: #000000;
+    font-weight: bold;
+    margin: 10px;
+    padding: 12px;
+}
+.tMoveUp {
+    background-image: url("/img/btn_fav_up.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 38px;
+    text-align: center;
+    vertical-align: middle;
+    width: 85px;
+}
+.tMoveDown {
+    background-image: url("/img/btn_fav_down.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 38px;
+    text-align: center;
+    vertical-align: middle;
+    width: 85px;
+}
+.oLine {
+    background-color: #182C6E;
+    border-bottom: 5px solid white;
+    height: 6px;
+    width: 90%;
+}
+.sysConfigHeight {
+    height: 363px;
+}
+.posPreBtn {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    float: left;
+    height: 15px;
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+    width: 30px;
+}
+.brClear {
+    clear: both;
+}
+.tButton {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+    text-align: center;
+    width: 200px;
+}
+.thCell {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    height: 40px;
+    padding: 2px;
+    text-align: center;
+}
+.tdCellFilter {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    height: 20px;
+    text-align: center;
+}
+.WhiteBkgPic {
+    background-color: white;
+    color: #000000;
+}
+.WhiteBkg {
+    background-color: #F0F0F0;
+    color: #000000;
+}
+.GrayBkg {
+    background-color: #9BA6BF;
+    color: #000000;
+}
+.OUCFMprop {
+    color: #000000;
+    padding-left: 4px;
+    text-align: left;
+}
+.OUCFMcenter {
+    color: #000000;
+    text-align: center;
+}
+#ic_deviceparameters #id_body {
+    background-color: #182C6E;
+    margin-top: 10px;
+}
+#ic_deviceparameters #id_firmware_table {
+    width: 100%;
+}
+#ic_deviceparameters #id_firmware_table tr td {
+    border: 0 none;
+}
+#ic_deviceparameters #DeviceInformation {
+    border: 1px solid #000000;
+    color: white;
+    width: 99%;
+}
+#ic_deviceparameters #DeviceInformation thead {
+    background-color: #5D6373;
+    text-align: center;
+}
+#ic_deviceparameters #DeviceInformation tbody {
+    background-color: #F0F0F0;
+    color: #000000;
+}
+#ic_deviceparameters #DeviceInformation td {
+    border: 1px solid #000000;
+}
+#ic_deviceparameters #DeviceInformation #DeviceImage {
+    background-color: white;
+    height: 56px;
+    margin: 0;
+    padding: 0;
+    width: 52px;
+}
+#ic_deviceparameters .parameter_area {
+    background-color: #182C6E;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+#ic_deviceparameters .parameter_header {
+    color: white;
+    margin: 2px;
+    padding: 2px;
+    width: 100%;
+}
+#ic_deviceparameters .parameter_header thead tr {
+    height: 50px;
+}
+#ic_deviceparameters .parameter_area .parameters_table {
+    border: 1px solid #000000;
+    color: white;
+    width: 99%;
+}
+#ic_deviceparameters .parameter_area .parameters_table thead {
+    background-color: #5D6373;
+    text-align: center;
+}
+#ic_deviceparameters .parameter_area .parameters_table tbody {
+    background-color: #9BA6BF;
+    color: #000000;
+}
+#ic_deviceparameters .parameter_area .parameters_table td {
+    border: 1px solid #000000;
+    height: 50px;
+}
+#ic_deviceparameters .parameter_area .parameters_table .ProfileTbl {
+    background-color: white;
+    border: 0 none;
+    height: auto;
+}
+#ic_deviceparameters .parameter_area .parameters_table .ProfileTbl thead {
+    background-color: white;
+    display: none;
+    height: auto;
+    visibility: hidden;
+}
+#ic_deviceparameters .parameter_area .parameters_table .ProfileTbl tbody tr td {
+    background-color: white;
+    border: 0 none;
+    height: auto;
+    padding: 2px;
+}
+#ic_deviceparameters #Timeouts_Area .TimeoutTable {
+    background-color: white;
+    border: 0 none;
+    border-collapse: collapse;
+    height: auto;
+    margin: 6px;
+}
+#ic_deviceparameters #Timeouts_Area .TimeoutTable thead td {
+    background-color: white;
+    border: 0 none;
+    color: #000000;
+    height: auto;
+    text-align: right;
+}
+#ic_deviceparameters #Timeouts_Area .TimeoutTable thead td {
+    background-color: white;
+    border: 0 none;
+    height: auto;
+    padding-bottom: 6px;
+    text-align: center;
+}
+#ic_deviceparameters #Timeouts_Area .TimeoutTable tbody td {
+    background-color: white;
+    border: 0 none;
+    height: auto;
+    padding: 1px 10px;
+}
+#ic_linkpeerlist #head_wrapper {
+    border-bottom: 0 none;
+    margin: 0;
+    padding: 0;
+}
+#ic_linkpeerlist #foot_wrapper {
+    border-top: 0 none;
+    margin: 0;
+    padding: 0;
+}
+#ic_linkpeerlist #body_wrapper {
+    background-color: #182C6E;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#ic_linkpeerlist .LinkListTbl {
+    border: 1px solid #000000;
+    empty-cells: show;
+    height: auto;
+    margin: 20px 0 0;
+    padding: 0;
+    width: 100%;
+}
+#ic_linkpeerlist .LinkListTbl td {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    color: #000000;
+    height: 50px;
+    text-align: center;
+}
+#ic_linkpeerlist .LinkListTbl th {
+    border: 1px solid #000000;
+}
+#ic_linkpeerlist .LinkListTbl thead th {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    font-weight: normal;
+    margin: 0;
+}
+#ic_linkpeerlist .LinkListTbl thead td {
+    background-color: #5D6373;
+    color: white;
+    margin: 0;
+}
+#ic_linkpeerlist .LinkListTbl .header_active {
+    background-color: #3678C9;
+}
+#ic_linkpeerlist .LinkListTbl .LinkListTbl_img {
+    background-color: white;
+    height: 80px;
+    text-align: left;
+}
+#modalbox #id_messagebox {
+    background-color: #000000;
+    height: auto;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 90;
+}
+#messagebox #id_messagebox {
+    background-color: #F0F0F0;
+    color: #000000;
+    height: auto;
+    left: 50%;
+    margin-left: -320px;
+    margin-top: -240px;
+    position: absolute;
+    top: 50%;
+    width: 400px;
+    z-index: 91;
+}
+#messagebox #id_messagebox table {
+    border-collapse: collapse;
+    color: #000000;
+    height: auto;
+    margin: 5px 0;
+    width: 100%;
+}
+#messagebox #id_messagebox table th {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+}
+#messagebox #id_messagebox td {
+    background-color: #9BA6BF;
+    border: 1px solid #000000;
+}
+#messagebox #id_messagebox tr {
+    text-align: center;
+    vertical-align: middle;
+}
+#messagebox #id_messagebox td.awbtn {
+    background-color: #F0F0F0;
+    height: 40px;
+}
+#ic_selchannel #previous_step_wrapper {
+    background-color: #182C6E;
+    margin: 20px;
+}
+#ic_selchannel #createLinkStep1 {
+    border: 1px solid #000000;
+    color: white;
+    width: 90%;
+}
+#ic_selchannel #createLinkStep1 thead {
+    background-color: #5D6373;
+}
+#ic_selchannel #createLinkStep1 tbody {
+    background-color: #F0F0F0;
+    color: #000000;
+}
+#ic_selchannel #createLinkStep1 td {
+    border: 1px solid #000000;
+}
+#ic_selchannel #createLinkStep1 .BlueHeader {
+    background-color: #3678C9;
+}
+#ic_selchannel #createLinkStep1 .WhiteHeader {
+    background-color: white;
+}
+#ic_selchannel #createLinkStep1 .WhiteHeader input {
+    width: 100%;
+}
+#ic_selchannel .ChnListTbl {
+    background-color: #182C6E;
+    border: 1px solid #000000;
+}
+#ic_selchannel .ChnListTbl tr td {
+    border: 1px solid #000000;
+}
+#ic_selchannel .ChnListTbl tbody tr td {
+    border: 1px solid #000000;
+    height: 56px;
+}
+#ic_selchannel .ChnListTbl .filterBox {
+    background-color: #9BA6BF;
+    border: 1px solid #000000;
+    color: white;
+    left: 0;
+    padding: 5px;
+    position: relative;
+    text-align: right;
+    top: 0;
+    visibility: hidden;
+    width: auto;
+    z-index: 9999;
+}
+#ic_selchannel .ChnListTbl .filterBox table td {
+    background-color: #9BA6BF;
+    border: 0 none;
+    color: white;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+#ic_selchannel .ChnListTbl a {
+    color: white;
+}
+#ic_selchannel .ChnListTbl img {
+    border: 0 none;
+}
+#ic_selchannel .ChnListTbl .chnListTbl_Caption {
+    background-color: #5D6373;
+    color: white;
+    height: auto;
+    padding: 6px;
+    text-align: center;
+}
+#ic_selchannel .ChnListTbl .sorted {
+    background-color: #3678C9;
+    color: white;
+    cursor: pointer;
+}
+#ic_selchannel .ChnListTbl .unsorted {
+    background-color: #5D6373;
+    color: white;
+    cursor: pointer;
+}
+#ic_selchannel .ChnListTbl .nosort {
+    background-color: #5D6373;
+    color: white;
+}
+#ic_selchannel .ChnListTbl .unsorted img {
+    visibility: hidden;
+}
+#ic_selchannel .ChnListTbl .filtered {
+    background-color: #3678C9;
+    color: white;
+    cursor: pointer;
+    height: auto;
+}
+#ic_selchannel .ChnListTbl .unfiltered {
+    background-color: #5D6373;
+    color: white;
+    cursor: pointer;
+    height: auto;
+}
+#ic_selchannel .ChnListTbl .nofilter {
+    background-color: #5D6373;
+    color: white;
+    height: auto;
+}
+#ic_selchannel .ChnListTbl .filtered a {
+    color: white;
+}
+#ic_selchannel .ChnListTbl .filtered a img {
+    border: 0 none;
+}
+#ic_selchannel .ChnListTbl .unfiltered a img {
+    visibility: hidden;
+}
+#ic_selchannel #body_wrapper {
+    background-color: #182C6E;
+    margin-top: 10px;
+}
+#ic_selchannel .ChnListTbl .virtual_key_hidden {
+    border: 1px solid #000000;
+    display: none;
+    visibility: hidden;
+}
+#ic_selchannel .ChnListTbl .virtual_key_visible {
+    border: 1px solid #000000;
+}
+#ic_selchannel .ChnListTbl .chnListTbl_dev_img {
+    background-color: white;
+    height: 50px;
+    text-align: left;
+}
+#ic_selchannel .ChnListTbl #chnListFoot tr td {
+    background-color: #5D6373;
+    color: white;
+    height: auto;
+}
+#ic_setprofiles .SetProfLinkTbl {
+    border: 1px solid #000000;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 99%;
+}
+#ic_setprofiles .SetProfLinkTbl thead {
+    background-color: #5D6373;
+    text-align: center;
+}
+#ic_setprofiles .SetProfLinkTbl tbody {
+    background-color: #9BA6BF;
+    color: #000000;
+}
+#ic_setprofiles .SetProfLinkTbl .BlueHeader {
+    background-color: #3678C9;
+}
+#ic_setprofiles .SetProfLinkTbl .WhiteHeader {
+    background-color: #F0F0F0;
+}
+#ic_setprofiles .SetProfLinkTbl .WhiteHeader input {
+    width: 100%;
+}
+#ic_setprofiles .SetProfLinkTbl td {
+    border: 1px solid #000000;
+}
+#ic_setprofiles .SetProfLinkTbl .SetProfLinkTbl_Buttons {
+    border: 0 none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#ic_setprofiles .SetProfLinkTbl .SetProfLinkTbl_Buttons td {
+    border: 0 none;
+}
+#ic_setprofiles .SetProfLinkTbl .ProfileTbl {
+    background-color: transparent;
+    border: 0 none;
+    color: #000000;
+    height: auto;
+    margin: 0;
+    text-align: left;
+    vertical-align: top;
+    width: auto;
+}
+#ic_setprofiles .SetProfLinkTbl .ProfileTbl thead {
+    background-color: transparent;
+    height: auto;
+    text-align: left;
+}
+#ic_setprofiles .SetProfLinkTbl .ProfileTbl thead tr {
+    height: auto;
+}
+#ic_setprofiles .SetProfLinkTbl .ProfileTbl tbody {
+    background-color: transparent;
+    color: #000000;
+}
+#ic_setprofiles .SetProfLinkTbl .ProfileTbl td {
+    border: 0 none;
+}
+#ic_setprofiles .SetProfLinkTbl .easymode_wrapper {
+}
+#ic_setprofiles #body_wrapper {
+    background-color: #182C6E;
+    margin-top: 10px;
+}
+#ic_setprofiles #id_sender_group_receiver_profiles_wrapper {
+    background-color: #182C6E;
+    margin-top: 10px;
+}
+#ic_neweasymode #id_body {
+    background-color: white;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    color: #000000;
+    height: 100%;
+    overflow: auto;
+    padding: 5px 2px 2px;
+    width: 100%;
+}
+.pname_color {
+    color: windowtext;
+}
+.translated {
+    color: windowtext;
+}
+.attention {
+    color: red;
+    font-weight: bold;
+}
+.track {
+    background-color: #9BA6BF;
+    cursor: pointer;
+    height: 0.5em;
+    position: relative;
+    width: 20em;
+    z-index: 0;
+}
+.handle {
+    background-color: #5D6373;
+    cursor: e-resize;
+    height: 1em;
+    position: absolute;
+    top: -0.25em;
+    width: 1em;
+    z-index: 1;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.thumbnail {
+    height: 50px;
+    position: relative;
+    width: 50px;
+}
+#canvas {
+    display: none;
+}
+.RFConfig_InterfacesTable {
+    border: 1px solid #000000;
+}
+.RFConfig_InterfacesTable th {
+    background-color: #5D6373;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+.RFConfig_InterfacesTable_tr {
+    background-color: #F0F0F0;
+}
+.RFConfig_InterfacesTable_tr_hover {
+    background-color: #9BA6BF;
+    cursor: pointer;
+}
+.RFConfig_InterfacesTable td {
+    color: #000000;
+    text-align: center;
+    vertical-align: middle;
+}
+.Filter {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    vertical-align: middle;
+}
+.Filter_Active {
+    background-color: #3678C9;
+    border: 1px solid #000000;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    vertical-align: middle;
+}
+.FilterCaption {
+    cursor: pointer;
+    height: 20px;
+    text-align: center;
+    width: 100%;
+}
+.FilterBodyWrapper {
+    position: absolute;
+    z-index: 500;
+}
+.FilterBody {
+    background-color: #9BA6BF;
+    border: 1px solid #000000;
+    color: white;
+    left: 5px;
+    margin: 0;
+    padding: 5px;
+    position: relative;
+    top: -5px;
+}
+.FilterBodyCell {
+    background-color: #9BA6BF;
+    border: 0 none;
+    color: white;
+    font-weight: normal;
+    height: 15px;
+}
+.FilterText {
+    margin: 3px 2%;
+    width: 96%;
+}
+.FilterButton {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    font-weight: normal;
+    margin: 3px 2%;
+    text-align: center;
+    vertical-align: middle;
+    width: 96%;
+}
+.DialogLayer {
+    background-image: url("/ise/img/tr50.gif");
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+.LayoutContainer {
+    border: 0 none;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.DialogContainer {
+    background-image: url("/ise/img/tr50.gif");
+    border: 0 none;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.DialogBoxWrapper {
+    background-image: url("/ise/img/tr50.gif");
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.DialogBox {
+    background-color: #000000;
+    position: absolute;
+}
+.DialogBoxTitle {
+    background-color: white;
+    color: #000000;
+    position: absolute;
+    text-indent: 5px;
+}
+.DialogBoxContent {
+    background-color: white;
+    color: #000000;
+    position: absolute;
+}
+.DialogBoxFooter {
+    background-color: white;
+    position: absolute;
+}
+.DialogButton {
+    background-color: #000000;
+    float: left;
+}
+.DialogButtonCaption {
+    background-color: #5D6373;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+#menubar {
+    background-color: #182C6E;
+    border-bottom: 5px solid white;
+    height: 34px;
+    padding: 2px;
+    width: 100%;
+    z-index: 189;
+}
+.MainMenuItem_Left {
+    background-color: #182C6E;
+    border-right: 2px solid white;
+    cursor: pointer;
+    float: left;
+    height: 30px;
+}
+.MainMenuItem_Right {
+    background-color: #182C6E;
+    border-left: 2px solid white;
+    cursor: pointer;
+    float: right;
+    height: 30px;
+}
+.MainMenuItem_Highlight {
+    background-color: #9BA6BF;
+}
+.MainMenuItem_Selected {
+    background-color: #3678C9;
+}
+.MainMenuItemCaption {
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+.MainMenuSubMenu {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    overflow: hidden;
+    position: absolute;
+    z-index: 189;
+}
+.MainMenuSubItem {
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.MainMenuSubItem_Highlight {
+    background-color: #9BA6BF;
+}
+#webuiloader_wrapper {
+    height: 100%;
+    width: 100%;
+}
+#webuilaoder_background {
+    background-color: #000000;
+    height: 80px;
+    left: 50%;
+    margin-left: -209px;
+    margin-top: -55px;
+    position: relative;
+    top: 50%;
+    width: 418px;
+}
+#webuilaoder {
+    background-color: #F0F0F0;
+    height: 76px;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    width: 414px;
+}
+#webuiloader_icon {
+    left: 5px;
+    position: absolute;
+    top: 10px;
+}
+#webuiloader_caption {
+    color: #000000;
+    height: 50px;
+    left: 65px;
+    line-height: 50px;
+    position: absolute;
+    top: 10px;
+}
+#ChannelChooserWrapper {
+    background-image: url("/ise/img/tr50.gif");
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+#ChannelChooserDialog {
+    background-color: #000000;
+    height: 600px;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: -300px;
+    position: relative;
+    top: 50%;
+    width: 1000px;
+}
+#ChannelChooserTitle {
+    background-color: white;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    height: 20px;
+    left: 2px;
+    line-height: 20px;
+    position: absolute;
+    text-indent: 5px;
+    top: 2px;
+    vertical-align: middle;
+    width: 996px;
+}
+#ChannelChooserContent {
+    background-color: white;
+    height: 520px;
+    left: 2px;
+    overflow: scroll;
+    position: absolute;
+    top: 24px;
+    width: 996px;
+}
+#ChannelChooserFooter {
+    background-color: white;
+    height: 50px;
+    left: 2px;
+    position: absolute;
+    top: 548px;
+    width: 996px;
+}
+.ChannelChooserButton {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 4px;
+    vertical-align: middle;
+}
+#ChannelChooserAbortButton {
+    left: 4px;
+    width: 100px;
+}
+#ChannelChooserResetFiltersButton {
+    left: 791px;
+    width: 200px;
+}
+#ChannelChooserVirtualButton {
+    left: 566px;
+    width: 220px;
+}
+#ChannelChooserTable {
+    border: 1px solid #000000;
+    empty-cells: show;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.ChannelChooserHead {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    font-weight: bold;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.ChannelChooserHead_Active {
+    background-color: #3678C9;
+    border: 1px solid #000000;
+    color: white;
+    font-weight: bold;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.ChannelChooserRow {
+    background-color: #F0F0F0;
+}
+.ChannelChooserRow_Highlight {
+    background-color: #9BA6BF;
+    cursor: pointer;
+}
+.ChannelChooserCell {
+    border: 1px solid #000000;
+    color: #000000;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+.ChannelChooserThumbnail {
+    background-color: white;
+    border: 1px solid #000000;
+    height: 80px;
+    text-align: left;
+}
+.ChannelChooserCell_Highlight {
+    background-color: #9BA6BF;
+}
+#MultiChannelChooserWrapper {
+    background-image: url("/ise/img/tr50.gif");
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+#MultiChannelChooserDialog {
+    background-color: #000000;
+    height: 600px;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: -300px;
+    position: relative;
+    top: 50%;
+    width: 1000px;
+}
+#MultiChannelChooserTitle {
+    background-color: white;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    height: 20px;
+    left: 2px;
+    line-height: 20px;
+    position: absolute;
+    text-indent: 5px;
+    top: 2px;
+    vertical-align: middle;
+    width: 996px;
+}
+#MultiChannelChooserContent {
+    background-color: white;
+    height: 520px;
+    left: 2px;
+    overflow: scroll;
+    position: absolute;
+    top: 24px;
+    width: 996px;
+}
+#MultiChannelChooserFooter {
+    background-color: white;
+    height: 50px;
+    left: 2px;
+    position: absolute;
+    top: 548px;
+    width: 996px;
+}
+.MultiChannelChooserButton {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 4px;
+    vertical-align: middle;
+}
+#MultiChannelChooserOkButton {
+    left: 4px;
+    width: 100px;
+}
+#MultiChannelChooserAbortButton {
+    left: 109px;
+    width: 100px;
+}
+#MultiChannelChooserResetFiltersButton {
+    left: 791px;
+    width: 200px;
+}
+#MultiChannelChooserVirtualButton {
+    left: 566px;
+    width: 220px;
+}
+#MultiChannelChooserTable {
+    border: 1px solid black;
+    empty-cells: show;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.MultiChannelChooserHead {
+    background-color: #5D6373;
+    border: 1px solid black;
+    color: white;
+    font-weight: bold;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.MultiChannelChooserHead_Active {
+    background-color: #3678C9;
+    border: 1px solid black;
+    color: white;
+    font-weight: bold;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.MultiChannelChooserRow {
+    background-color: #F0F0F0;
+}
+.MultiChannelChooserRow_Highlight {
+    background-color: #9BA6BF;
+}
+.MultiChannelChooserCell {
+    border: 1px solid #000000;
+    color: #000000;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+.MultiChannelChooserCell_Active {
+    background-color: white;
+    border: 1px solid #000000;
+    color: #000000;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+.MultiChannelChooserThumbnail {
+    background-color: white;
+    border: 1px solid #000000;
+    height: 80px;
+    text-align: left;
+}
+#DeviceListTable {
+    border: 0 none;
+    empty-cells: show;
+    height: auto;
+    margin: 1%;
+    padding: 0;
+    width: 97%;
+}
+.DeviceListHead {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    font-weight: bold;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.DeviceListHead_Active {
+    background-color: #3678C9;
+    border: 1px solid black;
+    color: white;
+    font-weight: bold;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.DeviceListFoot {
+    background-color: #5D6373;
+    border: 1px solid black;
+    color: white;
+    height: 3px;
+    line-height: 3px;
+    margin: 0;
+    padding: 0;
+}
+.DeviceListRow {
+    background-color: #F0F0F0;
+}
+.DeviceListRow_Highlight {
+    background-color: #9BA6BF;
+    cursor: pointer;
+}
+.DeviceListCell {
+    border: 1px solid #000000;
+    color: #000000;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+.DeviceListCell_Invisible {
+    background-color: #182C6E;
+    border: 0 none;
+    cursor: default;
+    height: 50px;
+    width: 25px;
+}
+.DeviceListCell_Invisible img {
+    cursor: pointer;
+    float: left;
+    height: 16px;
+    width: 16px;
+}
+.DeviceListThumbnail {
+    background-color: white;
+    border: 1px solid #000000;
+    height: 80px;
+    text-align: left;
+}
+.DeviceListButton {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    margin: 2%;
+    text-align: center;
+    vertical-align: middle;
+    width: 95%;
+}
+#ChannelConfigDialogLayer {
+    background-image: url("/ise/img/tr50.gif");
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+#ChannelConfigDialog {
+    background-color: #000000;
+    height: 600px;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: -300px;
+    position: relative;
+    top: 50%;
+    width: 800px;
+}
+#ChannelConfigDialogTitle {
+    background-color: white;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    height: 20px;
+    left: 2px;
+    line-height: 20px;
+    position: absolute;
+    text-indent: 5px;
+    top: 2px;
+    vertical-align: middle;
+    width: 796px;
+}
+#ChannelConfigDialogContent {
+    background-color: white;
+    color: #000000;
+    height: 520px;
+    left: 2px;
+    overflow: scroll;
+    position: absolute;
+    top: 24px;
+    width: 796px;
+}
+#ChannelConfigDialogFooter {
+    background-color: white;
+    height: 50px;
+    left: 2px;
+    position: absolute;
+    top: 548px;
+    width: 796px;
+}
+.ChannelConfigDialogButton {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 4px;
+    vertical-align: middle;
+}
+#ChannelConfigDialogOkButton {
+    left: 4px;
+    width: 100px;
+}
+#ChannelConfigDialogAbortButton {
+    left: 691px;
+    width: 100px;
+}
+#ChannelConfigDialogContentLeft {
+    left: 0;
+    margin: 5px;
+    overflow: hidden;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    width: 260px;
+}
+#ChannelConfigDialogContentMain {
+    left: 280px;
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    width: 480px;
+}
+.ChannelConfigDialogSection {
+    color: #000000;
+    margin-bottom: 10px;
+}
+.ChannelConfigDialogTable {
+    color: #000000;
+}
+#ChannelConfigDialogTestButton {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    width: 120px;
+}
+#ChannelConfigDialogTestResult {
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    width: 120px;
+}
+#DeviceConfigDialogLayer {
+    background-image: url("/ise/img/tr50.gif");
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+#DeviceConfigDialog {
+    background-color: #000000;
+    height: 450px;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: -225px;
+    position: relative;
+    top: 50%;
+    width: 800px;
+}
+#DeviceConfigDialogTitle {
+    background-color: white;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    height: 20px;
+    left: 2px;
+    line-height: 20px;
+    position: absolute;
+    text-indent: 5px;
+    top: 2px;
+    vertical-align: middle;
+    width: 796px;
+}
+#DeviceConfigDialogContent {
+    background-color: white;
+    color: #000000;
+    height: 371px;
+    left: 2px;
+    overflow: hidden;
+    position: absolute;
+    top: 24px;
+    width: 796px;
+}
+#DeviceConfigDialogFooter {
+    background-color: white;
+    height: 50px;
+    left: 2px;
+    position: absolute;
+    top: 398px;
+    width: 796px;
+}
+.DeviceConfigDialogButton {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 4px;
+    vertical-align: middle;
+}
+#DeviceConfigDialogOkButton {
+    left: 4px;
+    width: 100px;
+}
+#DeviceConfigDialogAbortButton {
+    left: 691px;
+    width: 100px;
+}
+#DeviceConfigDialogContentLeft {
+    left: 0;
+    margin: 5px;
+    overflow: hidden;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    width: 260px;
+}
+#DeviceConfigDialogContentMain {
+    left: 280px;
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    width: 480px;
+}
+.DeviceConfigDialogSection {
+    color: #000000;
+    margin-bottom: 10px;
+}
+.DeviceConfigDialogTable {
+    color: #000000;
+}
+#DeviceConfigDialogTestButton {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    width: 120px;
+}
+#DeviceConfigDialogTestResult {
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    width: 120px;
+}
+.YesNoDialogLayer {
+    background-image: url("/ise/img/tr50.gif");
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+.YesNoDialog {
+    background-color: #000000;
+    height: 150px;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -125px;
+    position: relative;
+    top: 50%;
+    width: 600px;
+}
+.YesNoDialogTitle {
+    background-color: white;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    height: 20px;
+    left: 2px;
+    line-height: 20px;
+    position: absolute;
+    text-indent: 5px;
+    top: 2px;
+    vertical-align: middle;
+    width: 596px;
+}
+.YesNoDialogContentWrapper {
+    background-color: white;
+    height: 70px;
+    left: 2px;
+    overflow: hidden;
+    position: absolute;
+    top: 24px;
+    width: 596px;
+}
+.YesNoDialogContent {
+    color: #000000;
+    font-weight: bold;
+    padding: 5px;
+}
+.YesNoDialogFooter {
+    background-color: white;
+    height: 50px;
+    left: 2px;
+    position: absolute;
+    top: 98px;
+    width: 596px;
+}
+.YesNoDialog_yesButton {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+    left: 4px;
+    line-height: 40px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 4px;
+    vertical-align: middle;
+    width: 100px;
+}
+.YesNoDialog_noButton {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+    left: 491px;
+    line-height: 40px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 4px;
+    vertical-align: middle;
+    width: 100px;
+}
+.bidcosrf_page {
+    margin: 20px;
+}
+.bidcosrf_footer {
+    background-color: white;
+    height: 2px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-top: 20px;
+    overflow: hidden;
+    width: 80%;
+}
+.bidcosrf_button {
+    background-color: #5D6373;
+    border: 2px solid #000000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+.bidcosrf_optionbutton {
+    float: left;
+    margin: 10px 20px 10px 0;
+    width: 100px;
+}
+.bidcosrf_clear {
+    clear: both;
+}
+.bidcosrf_table {
+    border: 1px solid #000000;
+    border-spacing: 0;
+    width: 95%;
+}
+.bidcosrf_tableheader {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+.bidcosrf_tablecell {
+    background-color: #9BA6BF;
+    border: 1px solid #000000;
+    color: #000000;
+    empty-cells: show;
+    text-align: center;
+}
+.bidcosrf_imagecell {
+    background-color: white;
+    border: 1px solid #000000;
+    empty-cells: show;
+    text-align: center;
+}
+.bidcosrf_actioncell {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    empty-cells: show;
+    text-align: center;
+}
+.bidcosrf_imagesize {
+    height: 80px;
+    width: 50px;
+}
+html, body {
+    border: 0 none;
+    font: 10pt Verdana;
+    margin: 0;
+    padding: 0;
+}
+application {
+    border: 0 none;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+.UIDisabled {
+    background-color: #F0F0F0;
+    border: 0 none;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 0.5;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.UIFrame {
+    background-color: #000000;
+    border: 0 none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+.UIFrameTitle {
+    background-color: white;
+    border: 0 none;
+    color: #000000;
+    cursor: pointer;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    text-indent: 5px;
+}
+.UIFrameContent {
+    background-color: white;
+    border: 0 none;
+    color: #000000;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+.UILabel {
+    border: 0 none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+.UIText {
+    border: 0 none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+.UICheckbox {
+    border: 0 none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+.UIScrollPane {
+    border: 0 none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+.UIScrollPaneContent {
+    border: 0 none;
+    left: 0;
+    margin: 0;
+    overflow: scroll;
+    padding: 0;
+    position: absolute;
+    top: 0;
+}
+.UIButton {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+.UIButtonText {
+    border: 0 none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    height: 22px;
+    line-height: 22px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    width: 150px;
+}
+.UIButtonHighlight {
+    border: 0 none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    height: 22px;
+    line-height: 22px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    width: 150px;
+}
+.UIButtonPressed {
+    border: 0 none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    height: 22px;
+    line-height: 22px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    width: 150px;
+}
+.UITextEdit {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+.UITextArea {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+.UIListbox {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+* {
+    font-family: Verdana,Tahoma,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}
+.CLASS00001 {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS00002 {
+    background-color: #5D6373;
+    border-color: #000000;
+}
+.CLASS00003 {
+    height: 200px;
+    width: 100%;
+}
+.CLASS00004 {
+    background-color: #F0F0F0;
+    height: 120px;
+    text-align: left;
+    width: 75%;
+}
+.CLASS00005 {
+    color: #000000;
+    margin-right: 20px;
+}
+.CLASS00006 {
+    border: 1px solid #000000;
+    margin-right: 30px;
+    width: 55px;
+}
+.CLASS00007 {
+    color: #000000;
+    margin-right: 20px;
+}
+.CLASS00008 {
+    border: 1px solid #000000;
+    margin-right: 30px;
+    width: 55px;
+}
+.CLASS00009 {
+    color: #000000;
+    margin-right: 20px;
+}
+.CLASS00010 {
+    border: 1px solid #000000;
+    width: 55px;
+}
+.CLASS00011 {
+    background-color: white;
+    height: 120px;
+    width: 25%;
+}
+.CLASS00012 {
+    cursor: pointer;
+    text-align: center;
+}
+.CLASS00013 {
+    background-color: white;
+    height: 200px;
+    width: 20%;
+}
+.CLASS00014 {
+    height: 200px;
+    width: 100%;
+}
+.CLASS00015 {
+    background-color: white;
+    height: 60px;
+    text-align: left;
+    width: 20%;
+}
+.CLASS00016 {
+    text-align: center;
+}
+.CLASS00017 {
+    text-align: center;
+}
+.CLASS00018 {
+    background-color: white;
+    height: 200px;
+    width: 20%;
+}
+.CLASS00100 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+}
+.CLASS00101 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    height: 40px;
+    text-align: center;
+}
+.CLASS00102 {
+    background-color: #9BA6BF;
+    border: 1px solid #000000;
+    color: #000000;
+    height: 160px;
+    text-align: center;
+}
+.CLASS00103 {
+    background-color: white;
+    border: 1px solid #000000;
+    color: #000000;
+    height: 160px;
+    text-align: center;
+}
+.CLASS00104 {
+    background-color: white;
+    height: 60px;
+    text-align: left;
+    width: 20%;
+}
+.CLASS00105 {
+    text-align: center;
+}
+.CLASS00106 {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS00200 {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS00201 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+}
+.CLASS00202 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    height: 40px;
+    text-align: center;
+}
+.CLASS00203 {
+    border: 1px solid #000000;
+}
+.CLASS00204 {
+    background-color: white;
+    border: 1px solid #000000;
+    color: red;
+    text-align: left;
+}
+.CLASS00205 {
+    border: 1px solid #000000;
+}
+.CLASS00206 {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    color: #000000;
+    height: 120px;
+}
+.CLASS00207 {
+    background-color: white;
+    border: 1px solid #000000;
+    height: 120px;
+    width: 5%;
+}
+.CLASS00208 {
+    cursor: pointer;
+    text-align: center;
+    width: 120px;
+}
+.CLASS00209 {
+    border: 1px solid #000000;
+    text-align: left;
+}
+.CLASS00210 {
+    background-color: white;
+    height: 60px;
+    text-align: left;
+    width: 20%;
+}
+.CLASS00211 {
+    text-align: center;
+}
+.CLASS00300 {
+    background-color: white;
+    height: 520px;
+    overflow: scroll;
+    width: 100%;
+}
+.CLASS00301 {
+    background-color: #000000;
+}
+.CLASS00302 {
+    background-color: #5D6373;
+    height: 40px;
+    text-align: center;
+}
+.CLASS00303 {
+    background-color: #5D6373;
+    color: white;
+}
+.CLASS00305 {
+    margin: 5px;
+}
+.CLASS00306 {
+    margin-left: 5px;
+}
+.CLASS00307 {
+    background-color: #5D6373;
+    height: 20px;
+    text-align: center;
+}
+.CLASS00308 {
+    background-color: #5D6373;
+    color: white;
+}
+.CLASS00309 {
+    text-align: left;
+}
+.CLASS00310 {
+    background-color: #5D6373;
+    height: 20px;
+    text-align: center;
+}
+.CLASS00311 {
+    background-color: #5D6373;
+    color: white;
+}
+.CLASS00312 {
+    background-color: white;
+    border: 1px solid #000000;
+}
+.CLASS00313 {
+    text-align: center;
+}
+.CLASS00314 {
+    font-size: smaller;
+    line-height: 15px;
+    text-align: center;
+}
+.CLASS00400 {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 50px;
+}
+.CLASS00500 {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS00501 {
+    background-color: #5D6373;
+    border-color: #000000;
+}
+.CLASS00502 {
+    background-color: white;
+    height: 200px;
+    width: 20%;
+}
+.CLASS00503 {
+    background-color: #F0F0F0;
+    height: 120px;
+    text-align: left;
+    width: 75%;
+}
+.CLASS00504 {
+    color: #000000;
+    margin-right: 20px;
+}
+.CLASS00505 {
+    border: 1px solid #000000;
+    margin-right: 30px;
+    width: 55px;
+}
+.CLASS00506 {
+    border: 1px solid #000000;
+    width: 55px;
+}
+.CLASS00507 {
+    background-color: white;
+    height: 120px;
+    width: 25%;
+}
+.CLASS00508 {
+    text-align: center;
+}
+.CLASS00509 {
+    background-color: white;
+    height: 60px;
+    text-align: left;
+    width: 20%;
+}
+.CLASS00510 {
+    background-color: white;
+    height: 200px;
+    width: 20%;
+}
+.CLASS00600 {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS00601 {
+    background-color: #5D6373;
+    border-color: #000000;
+}
+.CLASS00602 {
+    background-color: #F0F0F0;
+    height: 100px;
+    text-align: left;
+}
+.CLASS00603 {
+    margin-left: 5%;
+}
+.CLASS00604 {
+    background-color: white;
+    height: 60px;
+    text-align: left;
+    width: 20%;
+}
+.CLASS00605 {
+    text-align: center;
+}
+.CLASS00700 {
+    height: 100%;
+    overflow: auto;
+    vertical-align: top;
+    width: 100%;
+}
+.CLASS00701 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    height: 100%;
+}
+.CLASS00702 {
+    background-color: white;
+    border-right: 1px solid #000000;
+    color: #000000;
+}
+.CLASS00703 {
+    height: 100%;
+    width: 100%;
+}
+.CLASS00704 {
+    text-align: left;
+}
+.CLASS00705 {
+    color: red !important;
+    font-weight: bold;
+}
+.CLASS00706 {
+    background-color: white;
+}
+.CLASS00707 {
+    background-color: white;
+    color: #000000;
+    width: 100%;
+}
+.CLASS00708 {
+    width: 100%;
+}
+.CLASS00709 {
+    text-align: right;
+}
+.CLASS00711 {
+    text-align: center;
+}
+.CLASS00712 {
+    font-weight: normal;
+    width: 200px;
+}
+.CLASS00713 {
+    background-color: #182C6E;
+    width: 100%;
+}
+.CLASS00714 {
+    border-top: 5px solid white;
+    width: 100%;
+}
+.CLASS00715 {
+    color: white !important;
+    font-size: 10pt;
+    font-weight: bold;
+    text-align: left;
+}
+.CLASS00716 {
+    font-weight: normal;
+    text-align: center;
+    width: 200px;
+}
+.CLASS00717 {
+    background-color: white;
+    height: 200px;
+    overflow: scroll;
+}
+.CLASS00718 {
+    background-color: white;
+    border: 1px solid #000000;
+    height: 60px;
+    text-align: left;
+    width: 20%;
+}
+.CLASS00719 {
+    margin-left: 5px;
+    text-align: center;
+}
+.CLASS00800 {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS00801 {
+    background-color: white;
+    border: 1px solid #000000;
+    empty-cells: show;
+    text-align: left;
+}
+.CLASS00802 {
+    background-color: white;
+    height: 200px;
+    vertical-align: top;
+}
+.CLASS00803 {
+    color: #000000;
+    font-size: larger;
+    text-align: left;
+}
+.CLASS00804 {
+    color: #000000;
+}
+.CLASS00805 {
+    margin-left: 15px;
+    width: 55px;
+}
+.CLASS00806 {
+    width: 55px;
+}
+.CLASS00807 {
+    color: #000000;
+    margin-left: 20px;
+}
+.CLASS00808 {
+    background-color: white;
+    height: 60px;
+    text-align: left;
+    width: 20%;
+}
+.CLASS00809 {
+    text-align: center;
+}
+.CLASS00900 {
+    height: 100%;
+    overflow: auto;
+    vertical-align: top;
+    width: 100%;
+}
+.CLASS00901 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    height: 100%;
+}
+.CLASS00902 {
+    background-color: white;
+    color: #000000;
+}
+.CLASS00903 {
+    border-right: 1px solid #000000;
+}
+.CLASS00904 {
+    background-color: white;
+    color: #000000;
+}
+.CLASS00905 {
+    background-color: white;
+    color: #000000;
+    text-align: left;
+}
+.CLASS00906 {
+    text-align: left;
+}
+.CLASS00907 {
+    text-align: right;
+}
+.CLASS00908 {
+    background-color: white;
+    color: red;
+}
+.CLASS00909 {
+    border-left: 1px solid #000000;
+    height: 100%;
+}
+.CLASS00910 {
+    font-weight: normal;
+    line-height: 15px;
+    text-align: right;
+}
+.CLASS00911 {
+    background-color: #000000;
+    width: 100%;
+}
+.CLASS00912 {
+    border-top: 5px solid white;
+}
+.CLASS00913 {
+    border: 1px solid #000000;
+    height: 100%;
+}
+.CLASS00914 {
+    background-color: white;
+    border: 1px solid #000000;
+    color: #000000;
+    text-align: center;
+}
+.CLASS00915 {
+    background-color: gray;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+}
+.CLASS00916 {
+    background-color: white;
+    border: 1px solid #000000;
+    height: 60px;
+    text-align: left;
+    width: 20%;
+}
+.CLASS00917 {
+    text-align: center;
+}
+.CLASS01000 {
+    background-color: #000000;
+    height: 700px;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS01002 {
+    empty-cells: show;
+    font-size: small;
+    width: 100%;
+}
+.CLASS01003 {
+    background-color: #5D6373;
+    height: 40px;
+}
+.CLASS01004 {
+    background-color: #5D6373;
+    color: white;
+}
+.CLASS01005 {
+    height: 100%;
+    width: 100%;
+}
+.CLASS01006 {
+    margin: 5px;
+}
+.CLASS01007 {
+    margin-left: 5px;
+}
+.CLASS01008 {
+    background-color: #5D6373;
+}
+.CLASS01009 {
+    padding-left: 2px;
+}
+.CLASS01010 {
+    border: medium none;
+    height: 15px;
+}
+.CLASS01011 {
+    border: medium none;
+    height: 15px;
+    text-align: left;
+}
+.CLASS01012 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    empty-cells: show;
+    height: 20px;
+    text-align: center;
+}
+.CLASS01013 {
+    empty-cells: show;
+    width: 60%;
+}
+.CLASS01014 {
+    font-size: smaller;
+    line-height: 15px;
+}
+.CLASS01100 {
+    background-color: white;
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS01101 {
+    border: 1px solid #000000;
+}
+.CLASS01102 {
+    border: 1px solid #000000;
+    height: 40px;
+}
+.CLASS01103 {
+    border: 1px solid #000000;
+    height: 50px;
+}
+.CLASS01104 {
+    padding: 10px;
+}
+.CLASS01105 {
+    border: 1px solid #000000;
+}
+.CLASS01106 {
+    background-color: white;
+    border: 1px solid #000000;
+    text-align: left;
+}
+.CLASS01107 {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 50px;
+}
+.CLASS01108 {
+    background-color: white;
+    border: 1px solid #000000;
+    text-align: left;
+    width: 50px;
+}
+.CLASS01109 {
+    padding-left: 6px;
+    text-align: left;
+    width: 100%;
+}
+.CLASS01110 {
+    margin: 5px;
+    width: 100px;
+}
+.CLASS01200 {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS01201 {
+    background-color: white;
+    border-color: #000000;
+}
+.CLASS01202 {
+    background-color: white;
+    height: 100px;
+    text-align: left;
+    width: 20%;
+}
+.CLASS01203 {
+    margin-left: 5%;
+}
+.CLASS01204 {
+    background-color: white;
+    height: 100px;
+    text-align: left;
+    width: 80%;
+}
+.CLASS01205 {
+    width: 75%;
+}
+.CLASS01206 {
+    color: #000000;
+    margin-left: 20px;
+}
+.CLASS01207 {
+    margin-left: 20px;
+}
+.CLASS01208 {
+    border: 1px solid #000000;
+    cursor: pointer;
+    height: 10px;
+    width: 16px;
+}
+.CLASS01209 {
+    color: #000000;
+}
+.CLASS01210 {
+    background-color: white;
+    height: 60px;
+    padding: 5px;
+    width: 20%;
+}
+.CLASS01211 {
+    text-align: center;
+}
+.CLASS01212 {
+    width: 100%;
+}
+.CLASS01213 {
+    margin-left: 2px;
+}
+.CLASS01214 {
+    margin-left: -2px;
+}
+.CLASS01215 {
+    color: #000000;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.CLASS01217 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 20px;
+    text-align: center;
+    width: 120px;
+}
+.CLASS01300 {
+    background-color: white;
+    height: 400px;
+    overflow: scroll;
+    width: 100%;
+}
+.CLASS01301 {
+    background-color: #000000;
+    border: 1px solid #000000;
+    empty-cells: show;
+}
+.CLASS01302 {
+    background-color: #5D6373;
+    height: 40px;
+    text-align: center;
+}
+.CLASS01303 {
+    background-color: #5D6373;
+    color: white;
+}
+.CLASS01304 {
+    height: 100%;
+    width: 100%;
+}
+.CLASS01306 {
+    margin: 5px;
+}
+.CLASS01307 {
+    margin-left: 5px;
+}
+.CLASS01308 {
+    background-color: #5D6373;
+    height: 20px;
+    text-align: center;
+}
+.CLASS01309 {
+    background-color: white;
+    border: 1px solid #000000;
+    empty-cells: show;
+}
+.CLASS01310 {
+    background-color: white;
+    height: 60px;
+    text-align: left;
+    width: 20%;
+}
+.CLASS01311 {
+    text-align: center;
+}
+.CLASS01312 {
+    font-size: smaller;
+    line-height: 15px;
+    text-align: center;
+}
+.CLASS01400 {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS01401 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    font-size: small;
+}
+.CLASS01402 {
+    background-color: white;
+    border: 1px solid #000000;
+    color: #000000;
+}
+.CLASS01403 {
+    background-color: #9BA6BF;
+    border: 1px solid #000000;
+    padding: 3px;
+    text-align: left;
+}
+.CLASS01404 {
+    color: red !important;
+}
+.CLASS01405 {
+    color: #000000;
+}
+.CLASS01406 {
+    background-color: white;
+    border: 1px solid #000000;
+    height: 60px;
+    text-align: left;
+}
+.CLASS01407 {
+    cursor: pointer;
+    margin-left: 1%;
+}
+.CLASS01408 {
+    cursor: pointer;
+}
+.CLASS01501 {
+    width: 100%;
+}
+.CLASS01600 {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS01601 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+}
+.CLASS01602 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    height: 40px;
+    text-align: center;
+}
+.CLASS01603 {
+    background-color: #9BA6BF;
+    border: 1px solid #000000;
+    color: #000000;
+    height: 160px;
+    text-align: center;
+}
+.CLASS01604 {
+    background-color: white;
+    border: 1px solid #000000;
+    color: #000000;
+    height: 160px;
+    text-align: center;
+}
+.CLASS01605 {
+    background-color: white;
+    height: 60px;
+    text-align: left;
+    width: 20%;
+}
+.CLASS01606 {
+    text-align: center;
+}
+.CLASS01700 {
+    background-color: white;
+    border: 1px solid #000000;
+    color: #000000;
+    height: 500px;
+    width: 100%;
+}
+.CLASS01701 {
+    background-color: white;
+    width: 100%;
+}
+.CLASS01702 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    height: 20px;
+    margin-left: 10px;
+    width: 100px;
+}
+.CLASS01800 {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+.CLASS01801 {
+    margin: 4px;
+}
+.CLASS01802 {
+    float: left;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    top: 0;
+    width: 50%;
+}
+.CLASS01803 {
+    background-color: white;
+    margin-left: 4px;
+    margin-right: 4px;
+    text-align: center;
+}
+.CLASS01804 {
+    background-color: #9BA6BF;
+    color: #000000;
+    height: 96%;
+    margin-bottom: 1px;
+    margin-left: 4px;
+    margin-right: 4px;
+    overflow: auto;
+}
+.CLASS01805 {
+    margin-top: 20px;
+}
+.CLASS01806 {
+    border: 1px solid #000000;
+    margin-left: 20px;
+}
+.CLASS01807 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    height: 30px;
+    text-align: center;
+    width: 580px;
+}
+.CLASS01808 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    height: 5px;
+    width: 580px;
+}
+.CLASS01809 {
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    width: 49%;
+}
+.CLASS01810 {
+    height: 50%;
+}
+.CLASS01811 {
+    color: white;
+    padding-top: 5px;
+}
+.CLASS01812 {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    color: #000000;
+    height: 120px;
+    width: 580px;
+}
+.CLASS01900 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+}
+.CLASS02000 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+}
+.CLASS02100 {
+    background-color: #9BA6BF;
+    border: medium none;
+    color: #000000;
+    width: 100%;
+}
+.CLASS02101 {
+    background-color: #F0F0F0;
+    border: medium none;
+    color: #000000;
+    width: 100%;
+}
+.CLASS02102 {
+    height: 100px;
+    width: 100px;
+}
+.CLASS02103 {
+    background-color: white;
+    border: 1px solid #000000;
+}
+.CLASS02104 {
+    cursor: pointer;
+    height: 100px;
+    line-height: 100px;
+    width: 100px;
+}
+.CLASS02105 {
+    background-color: #000000;
+    text-align: center;
+}
+.CLASS02106 {
+    background-color: #5D6373;
+    color: white;
+    height: 40px;
+}
+.CLASS02107 {
+    background-color: #5D6373;
+    color: white;
+}
+.CLASS02108 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+.CLASS02109 {
+    height: 30px;
+}
+.CLASS02110 {
+    padding-left: 5px;
+    text-align: left;
+}
+.CLASS02201 {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.CLASS02300 {
+    font-size: 14px;
+    font-weight: bold;
+    width: 29.7cm;
+}
+.CLASS02301 {
+    cursor: pointer;
+}
+.CLASS02400 {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.CLASS02401 {
+    cursor: pointer;
+}
+.CLASS02402 {
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.CLASS02500 {
+    border: 1px solid #000000;
+}
+.CLASS02501 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    font-size: 12px;
+    padding: 4px;
+    text-align: center;
+    vertical-align: middle;
+}
+.CLASS02502 {
+    overflow: hidden;
+    width: 520px;
+}
+.CLASS02503 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+}
+.CLASS02504 {
+    height: 5px;
+    overflow: hidden;
+    width: 520px;
+}
+.CLASS02505 {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    color: #000000;
+    height: 120px;
+    width: 520px;
+}
+.CLASS02506 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    height: 5px;
+}
+.CLASS02507 {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    color: #000000;
+    font-size: 12px;
+    height: 30px;
+    overflow: auto;
+    padding: 4px;
+    text-align: center;
+}
+.CLASS02508 {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    color: #000000;
+    height: 120px;
+    max-width: 502px;
+    overflow: auto;
+    width: 520px;
+}
+.CLASS02509 {
+    overflow: hidden;
+    width: 120px;
+}
+.CLASS02510 {
+    border: medium none;
+    color: #000000;
+    width: 100%;
+}
+.CLASS02511 {
+    height: 96px;
+    width: 96px;
+}
+.CLASS02512 {
+    font-size: smaller;
+}
+.CLASS02513 {
+    background-color: white;
+    border: 1px solid #000000;
+    width: 96px;
+}
+.CLASS02514 {
+    border: 1px solid #000000;
+    height: 96px;
+    width: 96px;
+}
+.CLASS02515 {
+    width: 96px;
+}
+.CLASS02516 {
+    background-color: #9BA6BF;
+    border: 1px solid #000000;
+    color: #000000;
+    cursor: pointer;
+    font-size: 7pt;
+    font-style: italic;
+    height: 20px;
+    line-height: 20px;
+    width: 50px;
+}
+.CLASS02517 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    font-size: 7pt;
+    font-style: italic;
+    height: 20px;
+    line-height: 20px;
+    width: 50px;
+}
+.CLASS02518 {
+    background-color: white;
+    border: 1px solid #000000;
+}
+.CLASS02519 {
+    background-color: #F0F0F0 !important;
+    text-align: left;
+}
+.CLASS02520 {
+    background-color: #F0F0F0;
+    border: medium none;
+    color: #000000;
+    width: 100%;
+}
+.CLASS02521 {
+    border: medium none;
+    text-align: left;
+    width: 96px;
+}
+.CLASS02522 {
+    cursor: pointer;
+    height: 96px;
+    line-height: 100px;
+    width: 96px;
+}
+.CLASS02523 {
+    border: medium none;
+}
+.CLASS02524 {
+    border: medium none;
+    width: 75%;
+}
+.CLASS02525 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    height: 96px;
+    width: 96px;
+}
+.CLASS02525b {
+    background-color: #00C300;
+    border: 1px solid #000000;
+    height: 96px;
+    width: 96px;
+}
+.CLASS02526 {
+    color: #000000;
+}
+.CLASS02527 {
+    color: white;
+}
+.CLASS02528 {
+    border: medium none;
+    width: 50%;
+}
+.CLASS02529 {
+    border: medium none !important;
+    text-align: left !important;
+}
+.CLASS02530 {
+    background-color: #5D6373;
+    color: #000000;
+}
+.CLASS02531 {
+    color: #000000;
+    text-align: center;
+}
+.CLASS02532 {
+    font-size: 10px;
+    height: 25px;
+    width: 220px;
+}
+.CLASS02533 {
+    white-space: nowrap;
+}
+.CLASS02534 {
+    float: left;
+}
+.CLASS02535 {
+    float: right;
+}
+.CLASS02536 {
+    border: medium none;
+}
+.CLASS02537 {
+    background-color: #F0F0F0 !important;
+    padding: 5px;
+}
+.CLASS02538 {
+    height: 25px;
+    width: 220px;
+}
+.CLASS02539 {
+    background-color: #9BA6BF !important;
+}
+.CLASS02540 {
+    border: 0 none;
+    text-align: center;
+    width: 100%;
+}
+.CLASS02541 {
+    background-color: #5D6373;
+    color: #000000;
+}
+.CLASS02542 {
+    border: 1px solid #000000;
+    font-size: 20px;
+    text-align: right;
+}
+.CLASS02542b {
+    border: 1px solid #000000;
+    font-size: 18px;
+    text-align: right;
+}
+.CLASS02543 {
+    border: 1px solid #000000;
+}
+.CLASS02544 {
+    background-color: #5D6373;
+}
+.CLASS02545 {
+    cursor: pointer;
+    height: 35px;
+    line-height: 35px;
+    width: 80px;
+}
+.CLASS02546 {
+    color: #000000;
+}
+.CLASS02547 {
+    width: 100px;
+}
+.CLASS02548 {
+    background-color: #5D6373;
+}
+.CLASS02549 {
+    text-align: left;
+}
+.CLASS02550 {
+    cursor: pointer;
+    height: 35px;
+    line-height: 35px;
+    width: 80px;
+}
+.CLASS02551 {
+    cursor: pointer;
+    height: 35px;
+    width: 80px;
+}
+.CLASS02552 {
+    border: 1px solid #000000;
+}
+.CLASS02553 {
+    height: 100%;
+}
+.CLASS02554 {
+    cursor: pointer;
+    height: 35px;
+    width: 96px;
+}
+.CLASS02555 {
+    font-size: smaller;
+    font-weight: normal;
+}
+.CLASS02556 {
+    border-right: 1px solid #000000;
+    border-top: 1px solid #000000;
+    font-size: small;
+    font-weight: normal;
+    height: 35px;
+    width: 96px;
+}
+.CLASS02557 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    height: 96px;
+    width: 96px;
+}
+.CLASS02558 {
+    background-color: #C70022;
+    border: 1px solid #000000;
+    height: 96px;
+    width: 96px;
+}
+.CLASS02600 {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.CLASS02601 {
+    margin-left: 20px;
+    text-align: center;
+    width: 97%;
+}
+.CLASS02602 {
+    height: 44px;
+}
+.CLASS02603 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white !important;
+    height: 20px !important;
+}
+.CLASS02604 {
+    height: 58px;
+}
+.CLASS02605 {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 4px;
+    text-align: left;
+    width: 100px;
+}
+.CLASS02606 {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 4px;
+    width: 240px;
+}
+.CLASS02607 {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 4px;
+    width: 55px;
+}
+.CLASS02608 {
+    height: 50px;
+    position: relative;
+    text-align: left;
+    width: 50px;
+}
+.CLASS02609 {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 4px;
+    width: 140px;
+}
+.CLASS02610 {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 4px;
+    width: 100px;
+}
+.CLASS02611 {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 4px;
+    width: 200px;
+}
+.CLASS02612 {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 4px;
+}
+.CLASS02613 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    font-weight: bold;
+}
+.CLASS02614 {
+    background-color: #C0C0C0;
+    border: 1px solid gray;
+    color: white;
+    font-weight: bold;
+}
+.CLASS02615 {
+    font-size: smaller;
+    line-height: 14px;
+}
+.CLASS02616 {
+    margin: 5px;
+}
+.CLASS02617 {
+    margin-left: 5px;
+}
+.CLASS02618 {
+    padding-left: 2px;
+}
+.CLASS02619 {
+    height: 15px;
+}
+.CLASS02700 {
+    border: 1px solid #000000;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.CLASS02701 {
+    height: 100%;
+    width: 100%;
+}
+.CLASS02702 {
+    padding-left: 2px;
+}
+.CLASS02703 {
+    height: 15px;
+}
+.CLASS02704 {
+    background-color: #5D6373;
+    color: white !important;
+    height: 20px !important;
+}
+.CLASS02705 {
+    background-color: #5D6373;
+    height: 20px !important;
+}
+.CLASS02706 {
+    font-size: smaller;
+    line-height: 15px;
+}
+.CLASS02707 {
+    height: 100%;
+    padding-top: 11px;
+    width: 100%;
+}
+.CLASS02708 {
+    margin: 5px;
+}
+.CLASS02709 {
+    margin-left: 5px;
+}
+.CLASS02800 {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.CLASS02801 {
+    border: 1px solid #000000;
+    margin-left: 20px;
+    text-align: center;
+    width: 80%;
+}
+.CLASS02802 {
+    border: 1px solid #000000;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+.CLASS02803 {
+    font-weight: bold;
+}
+.CLASS02804 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white !important;
+    height: 20px !important;
+}
+.CLASS02805 {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.CLASS02806 {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 4px;
+    text-align: left;
+}
+.CLASS02807 {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 4px;
+}
+.CLASS02808 {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.CLASS02809 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.CLASS02810 {
+    font-size: smaller;
+    line-height: 14px;
+}
+.CLASS02811 {
+    margin: 5px;
+}
+.CLASS02812 {
+    margin-left: 5px;
+}
+.CLASS02813 {
+    padding-left: 2px;
+}
+.CLASS02814 {
+    height: 15px;
+}
+.CLASS02815 {
+    height: 100%;
+}
+.CLASS02900 {
+    border: 1px solid #000000;
+    margin-left: 50px;
+    margin-top: 27px;
+}
+.CLASS02901 {
+    height: 100%;
+    padding-top: 11px;
+    width: 100%;
+}
+.CLASS02902 {
+    background-color: #5D6373;
+    color: white !important;
+    height: 20px !important;
+}
+.CLASS02903 {
+    height: 100%;
+    width: 100%;
+}
+.CLASS02904 {
+    padding-left: 2px;
+}
+.CLASS02905 {
+    height: 15px;
+}
+.CLASS02906 {
+    background-color: #5D6373;
+    height: 20px !important;
+}
+.CLASS02907 {
+    border: medium none !important;
+}
+.CLASS02908 {
+    margin: 5px;
+}
+.CLASS02909 {
+    margin-left: 5px;
+}
+.CLASS03000 {
+    height: 44px;
+}
+.CLASS03001 {
+    background-color: #5D6373;
+    color: white !important;
+    height: 20px !important;
+}
+.CLASS03002 {
+    margin: 5px;
+}
+.CLASS03003 {
+    margin-left: 5px;
+}
+.CLASS03004 {
+    font-size: smaller;
+}
+.CLASS03005 {
+    text-decoration: none;
+}
+.CLASS03006 {
+    background-color: #5D6373;
+    height: 20px !important;
+}
+.CLASS03100 {
+    height: 1px;
+    line-height: 0;
+    width: 1px;
+}
+.CLASS03101 {
+    empty-cells: show;
+}
+.CLASS03102 {
+    border: 1px solid #000000;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    text-align: center;
+}
+.CLASS03103 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.CLASS03104 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    height: 20px;
+}
+.CLASS03105 {
+    height: 40px;
+}
+.CLASS03106 {
+    font-size: smaller;
+    line-height: 15px;
+}
+.CLASS03107 {
+    margin: 5px;
+}
+.CLASS03108 {
+    margin-left: 5px;
+}
+.CLASS03200 {
+    border: 1px solid #000000;
+    margin-left: 50px;
+    margin-top: 27px;
+}
+.CLASS03201 {
+    background-color: #5D6373;
+    color: white !important;
+    height: 20px !important;
+}
+.CLASS03202 {
+    padding-left: 2px;
+}
+.CLASS03203 {
+    height: 15px;
+}
+.CLASS03204 {
+    background-color: #5D6373;
+    height: 20px !important;
+}
+.CLASS03205 {
+    border: medium none !important;
+}
+.CLASS03206 {
+    margin: 5px;
+}
+.CLASS03207 {
+    margin-left: 5px;
+}
+.CLASS03300 {
+    height: 1px;
+    line-height: 0;
+    width: 1px;
+}
+.CLASS03301 {
+    empty-cells: show;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 75%;
+}
+.CLASS03302 {
+    border: 1px solid #000000;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.CLASS03303 {
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    text-align: center;
+}
+.CLASS03304 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white !important;
+    height: 20px !important;
+}
+.CLASS03305 {
+    height: 40px;
+}
+.CLASS03306 {
+    font-size: smaller;
+    line-height: 15px;
+}
+.CLASS03307 {
+    margin: 5px;
+}
+.CLASS03308 {
+    margin-left: 5px;
+}
+.CLASS03400 {
+    height: 100%;
+    overflow: hidden;
+}
+.CLASS03401 {
+    width: 100%;
+}
+.CLASS03402 {
+    overflow: auto;
+    width: 100%;
+}
+.CLASS03403 {
+    height: 96%;
+    width: 80%;
+}
+.CLASS03404 {
+    border: 1px solid #000000;
+    height: 50%;
+}
+.CLASS03405 {
+    font-size: smaller;
+    line-height: 15px;
+}
+.CLASS03406 {
+    border: 1px solid #000000;
+    margin-top: 27px;
+}
+.CLASS03407 {
+    cursor: pointer;
+}
+.CLASS03500 {
+    border: 1px solid #000000;
+    margin-left: 10px;
+    margin-top: 27px;
+}
+.CLASS03501 {
+    background-color: #5D6373;
+    color: white !important;
+    height: 20px !important;
+}
+.CLASS03502 {
+    border: medium none !important;
+}
+.CLASS03503 {
+    margin: 5px;
+}
+.CLASS03504 {
+    margin-left: 5px;
+}
+.CLASS03505 {
+    padding-left: 2px;
+}
+.CLASS03506 {
+    height: 15px;
+}
+.CLASS03600 {
+    border: 1px solid #000000;
+    margin-left: 50px;
+    margin-top: 27px;
+}
+.CLASS03601 {
+    background-color: #5D6373;
+    color: white !important;
+    height: 20px !important;
+}
+.CLASS03602 {
+    border: medium none !important;
+}
+.CLASS03603 {
+    margin: 5px;
+}
+.CLASS03604 {
+    margin-left: 5px;
+}
+.CLASS03605 {
+    padding-left: 2px;
+}
+.CLASS03606 {
+    height: 15px;
+}
+.CLASS03700 {
+    height: 1px;
+    line-height: 0;
+    width: 1px;
+}
+.CLASS03701 {
+    empty-cells: show;
+}
+.CLASS03702 {
+    height: 40px;
+}
+.CLASS03703 {
+    font-size: smaller;
+    line-height: 15px;
+}
+.CLASS03704 {
+    border: 1px solid #000000;
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    text-align: center;
+}
+.CLASS03705 {
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    text-align: center;
+}
+.CLASS03706 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white !important;
+    height: 20px !important;
+}
+.CLASS03707 {
+    height: 100%;
+    width: 100%;
+}
+.CLASS03708 {
+    margin: 5px;
+}
+.CLASS03709 {
+    margin-left: 5px;
+}
+.CLASS03800 {
+    border: 1px solid #000000;
+    margin-left: 50px;
+    margin-top: 27px;
+}
+.CLASS03801 {
+    background-color: #5D6373;
+    color: white !important;
+    height: 20px !important;
+}
+.CLASS03802 {
+    border: medium none !important;
+}
+.CLASS03803 {
+    margin: 5px;
+}
+.CLASS03804 {
+    margin-left: 5px;
+}
+.CLASS03805 {
+    padding-left: 2px;
+}
+.CLASS03806 {
+    height: 15px;
+}
+.CLASS03900 {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.CLASS03901 {
+    width: 100%;
+}
+.CLASS03902 {
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    width: 100%;
+}
+.CLASS03903 {
+    border: 1px solid #000000;
+    margin-top: 27px;
+    width: 235px;
+}
+.CLASS03904 {
+    vertical-align: top;
+}
+.CLASS03905 {
+    cursor: pointer;
+    vertical-align: middle;
+}
+.CLASS03906 {
+    background-color: white;
+    text-align: left;
+    vertical-align: middle;
+}
+.CLASS03907 {
+    height: 50px;
+    position: relative;
+    width: 50px;
+}
+.CLASS03908 {
+    overflow: auto;
+    width: 100%;
+}
+.CLASS03909 {
+    height: 96%;
+    width: 80%;
+}
+.CLASS03910 {
+    border: 1px solid #000000;
+    height: 50%;
+}
+.CLASS03911 {
+    font-size: smaller;
+    line-height: 15px;
+}
+.CLASS04000 {
+    height: 100%;
+    overflow: hidden;
+}
+.CLASS04001 {
+    width: 100%;
+}
+.CLASS04002 {
+    overflow: auto;
+    width: 100%;
+}
+.CLASS04003 {
+    height: 96%;
+    width: 80%;
+}
+.CLASS04004 {
+    border: 1px solid #000000;
+    height: 50%;
+}
+.CLASS04005 {
+    font-size: smaller;
+    line-height: 15px;
+}
+.CLASS04006 {
+    border: 1px solid #000000;
+    margin-top: 27px;
+}
+.CLASS04007 {
+    cursor: pointer;
+}
+.CLASS04100 {
+    empty-cells: show;
+    text-align: center;
+    width: 95%;
+}
+.CLASS04101 {
+    height: 40px;
+}
+.CLASS04102 {
+    background-color: #5D6373;
+    color: white !important;
+    font-size: 10pt !important;
+    height: 44px !important;
+}
+.CLASS04103 {
+    height: auto;
+}
+.CLASS04104 {
+    background-color: #5D6373;
+}
+.CLASS04105 {
+    cursor: pointer;
+}
+.CLASS04106 {
+    width: 100%;
+}
+.CLASS04107 {
+    font-size: smaller;
+    line-height: 15px;
+}
+.CLASS04108 {
+    color: white;
+}
+.CLASS04109 {
+    background-color: #5D6373;
+    color: white !important;
+}
+.CLASS04110 {
+    padding-left: 2px;
+}
+.CLASS04111 {
+    height: 15px;
+}
+.CLASS04112 {
+    margin: 5px;
+}
+.CLASS04113 {
+    margin-left: 5px;
+}
+.CLASS04200 {
+    empty-cells: show;
+    text-align: center;
+    width: 95%;
+}
+.CLASS04202 {
+    height: 40px;
+}
+.CLASS04203 {
+    font-size: 10pt;
+    height: 44px;
+}
+.CLASS04204 {
+    font-size: 10pt;
+}
+.CLASS04205 {
+    height: auto;
+}
+.CLASS04206 {
+    background-color: #5D6373;
+}
+.CLASS04207 {
+    cursor: pointer;
+}
+.CLASS04208 {
+    width: 100%;
+}
+.CLASS04209 {
+    font-size: smaller;
+    line-height: 15px;
+}
+.CLASS04210 {
+    color: white;
+}
+.CLASS04211 {
+    background-color: #5D6373;
+    color: white !important;
+}
+.CLASS04212 {
+    padding-left: 2px;
+}
+.CLASS04213 {
+    margin: 5px;
+}
+.CLASS04214 {
+    margin-left: 5px;
+}
+.CLASS04215 {
+    height: 15px;
+}
+.CLASS04300 {
+    display: none;
+    height: 0;
+    line-height: 0;
+    width: 0;
+}
+.CLASS04301 {
+    height: 100%;
+    overflow-y: scroll;
+    width: 100%;
+}
+.CLASS04302 {
+    padding: 10px;
+}
+.CLASS04303 {
+    empty-cells: show;
+}
+.CLASS04304 {
+    font-size: 10pt;
+    height: 40px;
+}
+.CLASS04305 {
+    height: 50px;
+    position: relative;
+    width: 50px;
+}
+.CLASS04306 {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+.CLASS04307 {
+    cursor: pointer;
+}
+.CLASS04308 {
+    margin: 4px;
+}
+.CLASS04309 {
+    background-color: #182C6E;
+}
+.CLASS04310 {
+    background-color: #182C6E;
+    color: #182C6E;
+}
+.CLASS04311 {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.CLASS04312 {
+    font-size: smaller;
+    line-height: 15px;
+}
+.CLASS04313 {
+    font-size: smaller;
+}
+.CLASS04314 {
+    text-align: left !important;
+}
+.CLASS04401 {
+    height: 50px;
+    position: relative;
+    width: 50px;
+}
+.CLASS04402 {
+    text-align: left !important;
+}
+.CLASS04403 {
+    height: 100%;
+    width: 100%;
+}
+.CLASS04404 {
+    cursor: pointer;
+}
+.CLASS04405 {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 50px;
+}
+.CLASS04500 {
+    height: 50px;
+    position: relative;
+    width: 50px;
+}
+.CLASS04501 {
+    text-align: left;
+}
+.CLASS04502 {
+    height: 100%;
+    width: 100%;
+}
+.CLASS04503 {
+    cursor: pointer;
+}
+.CLASS04600 {
+    height: 100%;
+    overflow-y: scroll;
+    width: 100%;
+}
+.CLASS04601 {
+    height: 40px;
+}
+.CLASS04602 {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.CLASS04603 {
+    font-size: smaller;
+    line-height: 15px;
+}
+.CLASS04700 {
+    height: 50px;
+    position: relative;
+    width: 50px;
+}
+.CLASS04701 {
+    text-align: left;
+}
+.CLASS04800 {
+    font-size: smaller;
+    line-height: 14px;
+    width: 200px;
+}
+.CLASS04801 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: auto;
+}
+.CLASS04802 {
+    color: white !important;
+    height: 40px !important;
+}
+.CLASS04803 {
+    height: 40px;
+}
+.CLASS04900 {
+    color: white;
+    font-weight: bold;
+}
+.CLASS04901 {
+    height: 40px;
+}
+.CLASS04902 {
+    background-color: #F0F0F0;
+    width: 220px;
+}
+.CLASS04903 {
+    text-align: left;
+}
+.CLASS04904 {
+    color: #000000;
+    font-size: 12px;
+}
+.CLASS04905 {
+    font-size: smaller;
+    line-height: 15px;
+    width: 220px;
+}
+.CLASS04906 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: auto;
+}
+.CLASS04907 {
+    width: 100px;
+}
+.CLASS05000 {
+    background-color: white;
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS05001 {
+    background-color: #5D6373;
+    color: white;
+    padding: 10px 0;
+}
+.CLASS05002 {
+    color: #000000;
+}
+.CLASS05003 {
+    background-color: white;
+    cursor: pointer;
+}
+.CLASS05004 {
+    background-color: white;
+}
+.CLASS05005 {
+    background-color: white;
+    color: #000000;
+    height: 100%;
+}
+.CLASS05006 {
+    padding: 5px;
+}
+.CLASS05007 {
+    color: #000000;
+    font-size: 9pt;
+}
+.CLASS05008 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    padding: 5px 0;
+}
+.CLASS05009 {
+    margin: 5px;
+    width: 100px;
+}
+.CLASS05010 {
+    color: #000000;
+    font-size: 9pt;
+    width: 100%;
+}
+.CLASS05011 {
+    width: 100%;
+}
+.CLASS05012 {
+    color: #000000;
+    font-size: 9pt;
+}
+.CLASS05100 {
+    background-color: white;
+    border: 1px solid #000000;
+    color: #000000;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+}
+.CLASS05101 {
+    height: 100%;
+    vertical-align: middle;
+}
+.CLASS05102 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+.CLASS05103 {
+    background-color: white;
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS05104 {
+    background-color: white;
+    color: #000000;
+    text-align: left;
+}
+.CLASS05105 {
+    text-align: left;
+}
+.CLASS05106 {
+    font-size: larger;
+}
+.CLASS05107 {
+    border-bottom: 2px solid #000000;
+}
+.CLASS05108 {
+    background-color: white;
+    border: 0 none;
+    color: #000000;
+    text-align: left;
+}
+.CLASS05109 {
+    height: 22px;
+    line-height: 22px;
+    margin: 5px;
+    width: 100px;
+}
+.CLASS05110 {
+    background-color: white;
+    border: 0 none;
+    color: #000000;
+    text-align: left;
+}
+.CLASS05200 {
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+.CLASS05201 {
+    height: 20px;
+}
+.CLASS05202 {
+    background-color: #5D6373;
+    color: white !important;
+    height: 20px !important;
+}
+.CLASS05203 {
+    margin: 5px;
+}
+.CLASS05204 {
+    margin-left: 5px;
+}
+.CLASS05205 {
+    background-color: #5D6373;
+    height: 20px !important;
+}
+.CLASS05206 {
+    border: 1px solid #000000;
+}
+.CLASS05207 {
+    font-size: smaller;
+    line-height: 15px;
+}
+.CLASS05208 {
+    text-align: left;
+}
+.CLASS05209 {
+    border: 1px solid #000000;
+    padding-left: 5px;
+    text-align: left;
+}
+.CLASS05210 {
+    border: medium none !important;
+}
+.CLASS05211 {
+    border: medium none !important;
+    color: #000000;
+    text-align: left !important;
+}
+.CLASS05300 {
+    height: 50px;
+}
+.CLASS05301 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    height: 38px;
+    text-align: center;
+}
+.CLASS05302 {
+    height: 80px;
+}
+.CLASS05303 {
+    background-color: white;
+}
+.CLASS05304 {
+    margin: 5px;
+}
+.CLASS05305 {
+    font-size: smaller;
+    line-height: 15px;
+}
+.CLASS05400 {
+    height: 130px;
+}
+.CLASS05401 {
+    height: 160px;
+}
+.CLASS05402 {
+    width: 100%;
+}
+.CLASS05403 {
+    text-align: center !important;
+}
+.CLASS05500 {
+    height: 50%;
+}
+.CLASS05501 {
+    background-color: #182C6E;
+}
+.CLASS05600 {
+    border: 1px solid #000000;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.CLASS05601 {
+    background-color: #5D6373;
+    border-right: 1px solid Black;
+    height: 5px;
+    width: 50%;
+}
+.CLASS05602 {
+    background-color: #5D6373;
+    border-left: 1px solid #000000;
+    height: 5px;
+    width: 50%;
+}
+.CLASS05603 {
+    background-color: #9BA6BF;
+    border: 1px solid #000000;
+    color: #000000;
+    width: 100%;
+}
+.CLASS05604 {
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.CLASS05605 {
+    background-color: #5D6373;
+    border-right: 1px solid #000000;
+    height: 5px;
+    width: 170px;
+}
+.CLASS05606 {
+    background-color: #5D6373;
+    border-left: 1px solid #000000;
+    height: 5px;
+    width: 170px;
+}
+.CLASS05607 {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    height: 80px;
+}
+.CLASS05608 {
+    background-image: url("/ise/img/btn_fav.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 74px;
+    text-align: center;
+    width: 170px;
+}
+.CLASS05609 {
+    background-color: #9BA6BF;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 6px;
+    width: 170px;
+}
+.CLASS05610 {
+    margin-top: 20px;
+}
+.CLASS05700 {
+    width: 1257px !important;
+}
+.CLASS05701 {
+    height: 50%;
+}
+.CLASS05702 {
+    background-color: #182C6E !important;
+}
+.CLASS05703 {
+    padding-left: 4px;
+    width: 592px;
+}
+.CLASS05704 {
+    background: none repeat scroll 0 0 #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    margin-top: 5px;
+    text-align: center;
+    width: 200px;
+}
+.CLASS05705 {
+    font-size: 9pt;
+    width: 572px;
+}
+.CLASS05706 {
+    border-top: 1px solid #000000;
+    height: 262px;
+    overflow: auto;
+    padding-left: 4px;
+    width: 592px;
+}
+.CLASS05707 {
+    font-size: 9pt;
+    width: 570px;
+}
+.CLASS05800 {
+    text-align: center;
+    width: 100%;
+}
+.CLASS05801 {
+    width: 100%;
+}
+.CLASS05802 {
+    height: 10px;
+    width: 1px;
+}
+.CLASS05900 {
+    margin-top: 20px;
+}
+.CLASS05901 {
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.CLASS05902 {
+    background-color: #5D6373;
+    border-right: 1px solid #000000;
+    height: 5px;
+    width: 170px;
+}
+.CLASS05903 {
+    background-color: #5D6373;
+    border-left: 1px solid #000000;
+    height: 5px;
+    width: 170px;
+}
+.CLASS05904 {
+    background-color: white;
+    border: 1px solid #000000;
+    height: 80px;
+}
+.CLASS05905 {
+    background-image: url("/ise/img/btn_fav.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 74px;
+    text-align: center;
+    width: 170px;
+}
+.CLASS05906 {
+    background-color: #9BA6BF;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 6px;
+    width: 170px;
+}
+.CLASS05907 {
+    border: 1px solid #000000;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.CLASS05908 {
+    background-color: #5D6373;
+    border-right: 1px solid #000000;
+    height: 5px;
+    width: 50%;
+}
+.CLASS05909 {
+    background-color: #5D6373;
+    border-left: 1px solid #000000;
+    height: 5px;
+    width: 50%;
+}
+.CLASS05910 {
+    background-color: #9BA6BF;
+    border: 1px solid #000000;
+    color: #000000;
+    width: 100%;
+}
+.CLASS06100 {
+    height: 50%;
+}
+.CLASS06101 {
+    background-color: #182C6E !important;
+}
+.CLASS06200 {
+    border: 1px solid #000000;
+    margin-left: 15px;
+    text-align: center;
+    width: 80%;
+}
+.CLASS06201 {
+    height: 50px;
+}
+.CLASS06202 {
+    height: 80px;
+}
+.CLASS06203 {
+    background-color: white;
+}
+.CLASS06204 {
+    margin: 5px;
+}
+.CLASS06300 {
+    margin: 20px;
+}
+.CLASS06301 {
+    color: white;
+}
+.CLASS06302 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    font-size: small;
+    height: 24px;
+    text-align: center;
+    width: 200px;
+}
+.CLASS06303 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    font-size: small;
+    height: 24px;
+    text-align: center;
+    width: 240px;
+}
+.CLASS06304 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    font-size: small;
+    height: 24px;
+    text-align: center;
+    width: 220px;
+}
+.CLASS06305 {
+    width: 100%;
+}
+.CLASS06306 {
+    border-bottom: 5px solid white !important;
+    width: 100%;
+}
+.CLASS06307 {
+    width: 420px;
+}
+.CLASS06308 {
+    height: 100%;
+    width: 100%;
+}
+.CLASS06309 {
+    padding-left: 2px;
+}
+.CLASS06310 {
+    height: 15px;
+}
+.CLASS06311 {
+    border: 1px solid #000000;
+    width: 170px;
+}
+.CLASS06312 {
+    width: 170px;
+}
+.CLASS06313 {
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+}
+.CLASS06314 {
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+}
+.CLASS06315 {
+    background-image: url("/ise/img/btn_fav_up.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 38px;
+    width: 85px;
+}
+.CLASS06316 {
+    background-image: url("/ise/img/btn_fav_down.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 38px;
+    width: 85px;
+}
+.CLASS06317 {
+    text-align: left;
+    width: 50px;
+}
+.CLASS06318 {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 50px;
+}
+.CLASS06319 {
+    padding-left: 8px;
+    text-align: left;
+}
+.CLASS06320 {
+    color: #000000;
+}
+.CLASS06321 {
+    background-color: #F0F0F0;
+}
+.CLASS06322 {
+    margin: 5px;
+}
+.CLASS06323 {
+    background-color: white;
+    border: 1px solid #000000;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.CLASS06324 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    height: 20px;
+    text-align: center;
+    width: auto;
+}
+.CLASS06325 {
+    background-color: white;
+    border: 1px solid #000000;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.CLASS06326 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    height: 20px;
+    text-align: center;
+    width: auto;
+}
+.CLASS06327 {
+    font-size: smaller;
+    line-height: 15px;
+    width: 240px;
+}
+.CLASS06328 {
+    border: 1px solid #000000;
+    height: 100px;
+    width: 100%;
+}
+.CLASS06329 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    height: 40px;
+}
+.CLASS06330 {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    color: #000000;
+    text-align: center;
+}
+.CLASS06331 {
+    background-color: #9BA6BF;
+    border: 1px solid #000000;
+    color: #000000;
+    text-align: center;
+}
+.CLASS06332 {
+    margin: 5px;
+}
+.CLASS06333 {
+    margin-left: 5px;
+}
+.CLASS06334 {
+    padding: 5px;
+}
+.CLASS06335 {
+    text-align: center;
+}
+.CLASS06336 {
+    background-color: #9BA6BF;
+}
+.CLASS06337 {
+    background-color: #5D6373;
+}
+.CLASS06400 {
+    border: 1px solid #000000;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.CLASS06401 {
+    background-color: #5D6373;
+    border-right: 1px solid #000000;
+    height: 5px;
+    width: 50%;
+}
+.CLASS06402 {
+    background-color: #5D6373;
+    border-left: 1px solid #000000;
+    height: 5px;
+    width: 50%;
+}
+.CLASS06403 {
+    background-color: #9BA6BF;
+    border: 1px solid #000000;
+    color: #000000;
+    width: 100%;
+}
+.CLASS06404 {
+    font-weight: bold;
+    text-align: center;
+}
+.CLASS06405 {
+    background-color: #5D6373 !important;
+    border: 1px solid #000000 !important;
+    color: white !important;
+    cursor: pointer;
+    height: 20px !important;
+    text-align: center !important;
+}
+.CLASS06406 {
+    padding-left: 2px;
+}
+.CLASS06407 {
+    height: 15px;
+}
+.CLASS06408 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    height: auto !important;
+    text-align: center;
+}
+.CLASS06409 {
+    margin: 5px;
+}
+.CLASS06410 {
+    margin-left: 5px;
+}
+.CLASS06411 {
+    text-align: left;
+}
+.CLASS06412 {
+    background-color: #F0F0F0;
+    border: 1px solid gray;
+    color: white;
+    margin: 5px;
+}
+.CLASS06413 {
+    font-size: smaller;
+    line-height: 15px;
+}
+.CLASS06414 {
+    height: 51px;
+}
+.CLASS10100 {
+    border: 1px solid;
+    margin-left: 6px;
+}
+.CLASS10101 {
+    background-color: gray;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    font-family: arial;
+    font-size: 10pt;
+    margin: 1px;
+    padding: 0 5px;
+    vertical-align: middle;
+    width: auto;
+}
+.CLASS10102 {
+    background-color: #9BA6BF;
+    padding: 6px;
+}
+.CLASS10103 {
+    background-color: #9BA6BF;
+    padding: 6px;
+    text-align: right;
+}
+.CLASS10200 {
+    background-color: white;
+    border: 1px solid #000000;
+    padding: 10px;
+}
+.CLASS10300 {
+    border: 0 none;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+}
+.CLASS10301 {
+    color: red;
+    font-weight: bold;
+}
+.CLASS10302 {
+    border: 3px solid #000000;
+    padding: 5px;
+}
+.CLASS10400 {
+    background-color: gray;
+    height: 10px;
+}
+.CLASS10500 {
+    height: 100%;
+    overflow: scroll;
+    width: 100%;
+}
+.CLASS10600 {
+    background-color: white;
+}
+.CLASS10700 {
+    height: 20px;
+}
+.CLASS10800 {
+    border: 2px solid #000000;
+    height: 250px;
+    line-height: 250px;
+    text-align: center;
+    width: 250px;
+}
+.CLASS10801 {
+    height: 250px;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 250px;
+}
+.CLASS10802 {
+    text-align: center;
+    width: 250px;
+}
+.CLASS10803 {
+    width: 200px;
+}
+.CLASS10804 {
+    font-weight: bold;
+}
+.CLASS10805 {
+    text-align: justify;
+}
+.CLASS10900 {
+    height: 1px;
+    width: 25px;
+}
+.CLASS10901 {
+    height: 20px;
+}
+.CLASS10902 {
+    background-color: #C0C0C0;
+    border: 1px solid gray;
+    color: #F0F0F0;
+    cursor: default;
+}
+.CLASS10903 {
+    height: 3px;
+}
+.CLASS10904 {
+    height: 1px;
+    overflow: hidden;
+    width: 25px;
+}
+.CLASS10905 {
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
+}
+.CLASS10906 {
+    border-right: 0 none;
+}
+.CLASS10907 {
+    border-left: 0 none;
+    border-right: 0 none;
+}
+.CLASS10908 {
+    border-left: 0 none;
+}
+.CLASS10909 {
+    height: 1px;
+    overflow: hidden;
+    width: 55px;
+}
+.CLASS11000 {
+    border: 2px solid #000000;
+    height: 250px;
+    line-height: 250px;
+    text-align: center;
+    width: 250px;
+}
+.CLASS11001 {
+    height: 250px;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 250px;
+}
+.CLASS11002 {
+    text-align: center;
+    width: 250px;
+}
+.CLASS11003 {
+    font-weight: bold;
+}
+.CLASS11004 {
+    text-align: justify;
+}
+.CLASS11005 {
+    width: 200px;
+}
+.CLASS11006 {
+    cursor: pointer;
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.CLASS11007 {
+    font-weight: bold;
+    line-height: 16px;
+    margin-bottom: 5px;
+}
+.CLASS11100 {
+    text-align: center;
+    width: 80px;
+}
+.CLASS11101 {
+    vertical-align: middle;
+}
+.CLASS11102 {
+    width: 100%;
+}
+.CLASS11103 {
+    vertical-align: bottom;
+}
+.CLASS11104 {
+    padding-top: 7px;
+    text-align: right;
+}
+.CLASS11105 {
+    padding-right: 8px;
+    padding-top: 7px;
+}
+.CLASS11106 {
+    width: 25px;
+}
+.CLASS11107 {
+    width: 100%;
+}
+.CLASS11108 {
+    cursor: pointer;
+}
+.CLASS11109 {
+    padding-right: 14px;
+    padding-top: 6px;
+}
+.CLASS20001 {
+    padding: 4px;
+}
+.CLASS20002 {
+    border: 0 none;
+}
+.CLASS20003 {
+    height: 165px;
+}
+.CLASS20004 {
+    border-bottom: 0 none;
+    padding: 4px;
+    vertical-align: top;
+}
+.CLASS20005 {
+    border-top: 0 none;
+}
+.CLASS20006 {
+    width: 85% !important;
+}
+.CLASS20007 {
+    border-bottom: 0 none;
+}
+.CLASS20008 {
+    height: 50px;
+}
+.CLASS20009 {
+    background-color: gray;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    margin: 2px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+.CLASS20010 {
+    width: 150px;
+}
+.CLASS20100 {
+    color: red;
+}
+.CLASS20200 {
+    color: red;
+    text-decoration: blink;
+}
+.CLASS20300 {
+    color: windowtext;
+}
+.CLASS20400 {
+    background-color: gray;
+}
+.CLASS20500 {
+    color: red;
+    font-weight: bold;
+    text-decoration: blink;
+}
+.CLASS20600 {
+    background-color: #000000;
+    color: #000000;
+    height: 1px;
+}
+.CLASS20700 {
+    padding: 10px;
+    text-align: center;
+}
+.CLASS20800 {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS20801 {
+    background-color: white;
+    color: #000000;
+    font-size: 8pt;
+}
+.CLASS20802 {
+    background-color: white;
+    color: #000000;
+    padding: 10px 0;
+}
+.CLASS20803 {
+    border: 0 none;
+    width: 10%;
+}
+.CLASS20804 {
+    margin: 5px;
+    width: 100px;
+}
+.CLASS20805 {
+    font-size: 8pt;
+}
+.CLASS20806 {
+    padding: 10px 0;
+}
+.CLASS20807 {
+    background-color: #5D6373;
+    color: white;
+    font-size: 10pt;
+    vertical-align: middle;
+}
+.CLASS20808 {
+    background-color: white;
+    color: #000000;
+}
+.CLASS20809 {
+    border: 0 none;
+    color: red;
+}
+.CLASS20810 {
+    background-color: white;
+    color: #000000;
+    font-size: 8pt;
+}
+.CLASS20811 {
+    border: 0 none;
+}
+.CLASS20812 {
+    color: #000000;
+}
+.CLASS20813 {
+    margin: 5px;
+    width: 200px;
+}
+.CLASS20814 {
+    color: red;
+}
+.CLASS20815 {
+    background-color: white;
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS20816 {
+    background-color: white;
+    color: red;
+}
+.CLASS20817 {
+    background-color: white;
+    color: #000000;
+    font-size: 8pt;
+}
+.CLASS20818 {
+    margin: 5px;
+    width: 100px;
+}
+.CLASS20819 {
+    padding: 5px;
+}
+.CLASS20820 {
+    height: 100px;
+    width: 400px;
+}
+.CLASS20900 {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS20901 {
+    font-size: 8pt;
+}
+.CLASS20902 {
+    padding: 10px 0;
+}
+.CLASS20903 {
+    background-color: #5D6373;
+    color: white;
+    font-size: 10pt;
+    vertical-align: middle;
+}
+.CLASS20904 {
+    background-color: white;
+    color: #000000;
+}
+.CLASS20905 {
+    border: 0 none;
+}
+.CLASS20906 {
+    margin: 5px;
+    width: 150px;
+}
+.CLASS20907 {
+    border: 0 none;
+    width: 10%;
+}
+.CLASS20908 {
+    margin: 5px;
+    width: 100px;
+}
+.CLASS20909 {
+    background-color: white;
+    color: #000000;
+    font-size: 8pt;
+}
+.CLASS20910 {
+    margin: 5px;
+    width: 200px;
+}
+.CLASS20911 {
+    color: #000000;
+}
+.CLASS20912 {
+    border: 0 none;
+    color: red;
+}
+.CLASS20913 {
+    background-color: white;
+    color: #000000;
+    font-size: 8pt;
+    width: 100%;
+}
+.CLASS20914 {
+    text-align: justify;
+}
+.CLASS20915 {
+    text-align: left;
+}
+.CLASS20916 {
+    background-color: white;
+    color: #000000;
+    font-size: 8pt;
+}
+.CLASS20917 {
+    background-color: white;
+    color: #000000;
+    padding: 10px 0;
+}
+.CLASS20918 {
+    background-color: white;
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS20919 {
+    margin: 5px;
+    width: 100px;
+}
+.CLASS20920 {
+    color: gray;
+}
+.CLASS20921 {
+    background-color: white;
+    color: red;
+}
+.CLASS21000 {
+    background-color: gray;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    margin: 2px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+.CLASS21100 {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS21101 {
+    background-color: white;
+    color: #000000;
+    font-size: 8pt;
+}
+.CLASS21102 {
+    background-color: white;
+    color: #000000;
+    padding: 10px 0;
+}
+.CLASS21103 {
+    border: 0 none;
+    width: 10%;
+}
+.CLASS21104 {
+    margin: 5px;
+    width: 100px;
+}
+.CLASS21105 {
+    font-size: 8pt;
+}
+.CLASS21106 {
+    background-color: white;
+    color: #000000;
+    font-size: 8pt;
+    width: 100%;
+}
+.CLASS21107 {
+    border: 0 none;
+}
+.CLASS21108 {
+    margin: 5px;
+    width: 100px;
+}
+.CLASS21109 {
+    border: 0 none;
+    width: 80%;
+}
+.CLASS21110 {
+    margin: 5px;
+    width: 150px;
+}
+.CLASS21111 {
+    background-color: white;
+    color: #000000;
+    font-size: 8pt;
+}
+.CLASS21112 {
+    color: #000000;
+}
+.CLASS21113 {
+    background-color: white;
+    color: #000000;
+}
+.CLASS21114 {
+    background-color: white;
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS21115 {
+    background-color: white;
+    color: #000000;
+    padding: 10px 0;
+}
+.CLASS21116 {
+    background-color: #5D6373;
+    color: white;
+    font-size: 10pt;
+    vertical-align: middle;
+}
+.CLASS21117 {
+    margin: 5px;
+    width: 200px;
+}
+.CLASS21118 {
+    color: gray;
+}
+.CLASS21119 {
+    padding: 10px 0;
+}
+.CLASS21200 {
+    background-color: white;
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS21201 {
+    font-size: 8pt;
+}
+.CLASS21202 {
+    padding: 10px 0;
+}
+.CLASS21203 {
+    background-color: white;
+    color: #000000;
+    vertical-align: top;
+}
+.CLASS21204 {
+    color: #000000;
+    font-size: 8pt;
+}
+.CLASS21205 {
+    background-color: #9BA6BF;
+    border: 0 none;
+}
+.CLASS21206 {
+    border: 0 none;
+    width: 80%;
+}
+.CLASS21207 {
+    background-color: #5D6373;
+    color: white;
+    font-size: 10pt;
+    vertical-align: middle;
+}
+.CLASS21208 {
+    background-color: #9BA6BF;
+    color: #000000;
+    vertical-align: top;
+}
+.CLASS21209 {
+    border: 0 none;
+    width: 10%;
+}
+.CLASS21210 {
+    margin: 5px;
+    width: 100px;
+}
+.CLASS21211 {
+    font-weight: bold;
+}
+.CLASS21212 {
+    background-color: #5D6373;
+    color: white;
+    font-size: 10pt;
+    vertical-align: middle;
+}
+.CLASS21213 {
+    height: 30px;
+    margin: 5px;
+    width: 100px;
+}
+.CLASS21214 {
+    height: 30px;
+    margin: 5px;
+    width: 200px;
+}
+.CLASS21215 {
+    background-color: white !important;
+    color: #000000 !important;
+}
+.CLASS21216 {
+    height: 30px;
+    margin: 5px;
+    width: 150px;
+}
+.CLASS21300 {
+    height: 56%;
+}
+.CLASS21301 {
+    background-color: #9BA6BF;
+    vertical-align: top;
+}
+.CLASS21302 {
+    color: #000000;
+    font-size: 20px;
+    margin: 5px;
+    text-align: center;
+}
+.CLASS21303 {
+    color: #000000;
+    text-align: center;
+    width: 100%;
+}
+.CLASS21304 {
+    color: #000000;
+}
+.CLASS21305 {
+    background-color: #9BA6BF;
+    text-align: center;
+    vertical-align: top;
+}
+.CLASS21306 {
+    vertical-align: top;
+}
+.CLASS21400 {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS21401 {
+    background-color: white;
+    color: #000000;
+    font-size: 8pt;
+}
+.CLASS21402 {
+    background-color: white;
+    color: #000000;
+    padding: 10px 0;
+}
+.CLASS21403 {
+    border: 0 none;
+    width: 10%;
+}
+.CLASS21404 {
+    margin: 5px;
+    width: 100px;
+}
+.CLASS21405 {
+    font-size: 8pt;
+}
+.CLASS21406 {
+    background-color: white;
+    height: 250px;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS21407 {
+    padding: 10px 0;
+}
+.CLASS21408 {
+    background-color: #5D6373;
+    color: white;
+    font-size: 10pt;
+    vertical-align: middle;
+}
+.CLASS21409 {
+    background-color: white;
+    color: #000000;
+}
+.CLASS21410 {
+    background-color: white;
+    color: #000000;
+    font-size: 8pt;
+}
+.CLASS21411 {
+    border: 0 none;
+}
+.CLASS21412 {
+    margin: 5px;
+    width: 200px;
+}
+.CLASS21413 {
+    border: 0 none;
+    color: red;
+}
+.CLASS21500 {
+    background-color: white;
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS21501 {
+    font-size: 8pt;
+}
+.CLASS21502 {
+    padding: 10px 0;
+}
+.CLASS21503 {
+    background-color: #5D6373;
+    color: white;
+    font-size: 10pt;
+    vertical-align: middle;
+}
+.CLASS21504 {
+    background-color: white;
+    color: #000000;
+}
+.CLASS21505 {
+    background-color: white;
+    color: #000000;
+    font-size: 8pt;
+}
+.CLASS21506 {
+    border: 0 none;
+}
+.CLASS21507 {
+    margin: 5px;
+    width: 200px;
+}
+.CLASS21508 {
+    border: 0 none;
+    width: 10%;
+}
+.CLASS21509 {
+    margin: 5px;
+    width: 100px;
+}
+.CLASS21510 {
+    color: #000000;
+}
+.CLASS21600 {
+    background-color: white;
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS21601 {
+    font-size: 8pt;
+}
+.CLASS21602 {
+    padding: 10px 0;
+}
+.CLASS21603 {
+    background-color: white;
+    color: #000000;
+    vertical-align: top;
+}
+.CLASS21604 {
+    color: #000000;
+    font-size: 8pt;
+}
+.CLASS21605 {
+    border: 0 none;
+    width: 10%;
+}
+.CLASS21606 {
+    margin: 5px;
+    width: 100px;
+}
+.CLASS21607 {
+    border: 0 none;
+    width: 70%;
+}
+.CLASS21700 {
+    height: 50%;
+}
+.CLASS21701 {
+    height: 70px;
+    line-height: 70px;
+}
+.CLASS21702 {
+    background-color: #182C6E !important;
+}
+.CLASS21703 {
+    height: 70px;
+    line-height: 35px;
+}
+.CLASS21800 {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+}
+.CLASS21801 {
+    border-bottom: 4px solid gray;
+}
+.CLASS21802 {
+    background-color: infobackground;
+    border: 2px solid #F0F0F0;
+    height: 28px;
+    left: 300px;
+    padding: 6px;
+    position: absolute;
+    top: 0;
+}
+.CLASS21803 {
+    margin: 4px;
+}
+.CLASS21804 {
+    border: 1px solid #000066;
+    height: 200px;
+    width: 200px;
+}
+.CLASS21805 {
+    background-color: white;
+}
+.CLASS21806 {
+    color: red;
+}
+.CLASS21807 {
+    background-color: white;
+}
+.CLASS21900 {
+    padding: 4px;
+}
+.CLASS21901 {
+    font-size: smaller;
+    line-height: 15px;
+}
+.CLASS21902 {
+    width: 100%;
+}
+.CLASS21903 {
+    width: 10%;
+}
+.CLASS21904 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+}
+.CLASS21905 {
+    width: 80%;
+}
+.CLASS21906 {
+    color: red;
+    font-size: large;
+    font-weight: bold;
+}
+.CLASS21907 {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 50px;
+}
+.CLASS21908 {
+    background-color: #182C6E;
+    overflow: auto;
+    width: 100%;
+}
+.CLASS21909 {
+    font-size: x-small;
+    line-height: 15px;
+}
+.CLASS21910 {
+    font-size: xx-small;
+    line-height: 10px;
+}
+.CLASS21911 {
+    width: 70%;
+}
+.CLASS21912 {
+    position: relative;
+}
+.CLASS21913 {
+    height: 50px;
+}
+.CLASS21914 {
+    background-color: #5D6373;
+}
+.CLASS21915 {
+    position: absolute;
+}
+.CLASS21916 {
+    margin-top: 5px;
+    text-align: right;
+}
+.CLASS21917 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    padding: 0 20px;
+    text-align: center;
+    width: 30px;
+}
+.CLASS22000 {
+    margin: 4px;
+    width: 99%;
+}
+.CLASS22001 {
+    background-color: #F0F0F0;
+    text-align: center;
+}
+.CLASS22002 {
+    border-bottom: 2px solid white !important;
+    padding-bottom: 10px;
+}
+.CLASS22003 {
+    background-color: white;
+}
+.CLASS22004 {
+    background-color: #F0F0F0;
+    text-align: center;
+}
+.CLASS22005 {
+    height: 50px;
+    position: relative;
+    width: 50px;
+}
+.CLASS22006 {
+    text-align: right;
+}
+.CLASS22007 {
+    padding: 7px;
+    text-align: right;
+}
+.CLASS22008 {
+    text-align: center;
+}
+.CLASS22009 {
+    width: 99%;
+}
+.CLASS22010 {
+    height: 50px;
+}
+.CLASS22011 {
+    width: 100%;
+}
+.CLASS22012 {
+    width: 10%;
+}
+.CLASS22013 {
+    width: 80%;
+}
+.CLASS22014 {
+    width: 100px;
+}
+.CLASS22015 {
+    background-color: #9BA6BF;
+}
+.CLASS22100 {
+    font-size: smaller;
+    line-height: 14px;
+}
+.CLASS22101 {
+    padding: 4px;
+}
+.CLASS22102 {
+    background-color: infobackground;
+    border: 2px solid #F0F0F0;
+    height: 28px;
+    left: 300px;
+    padding: 6px;
+    position: absolute;
+    top: 0;
+}
+.CLASS22103 {
+    color: red;
+    font-size: large;
+    font-weight: bold;
+}
+.CLASS22104 {
+    background-color: white;
+    height: 50px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    width: 50px;
+}
+.CLASS22105 {
+    height: 50px;
+    position: relative;
+    width: 50px;
+}
+.CLASS22106 {
+    text-align: center;
+}
+.CLASS22107 {
+    width: 10%;
+}
+.CLASS22108 {
+    width: 80%;
+}
+.CLASS22109 {
+    vertical-align: middle;
+}
+.CLASS22200 {
+    width: 100%;
+}
+.CLASS22201 {
+    color: red;
+    font-weight: bold;
+    margin-top: 6px;
+    text-align: center;
+}
+.CLASS22202 {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+.CLASS22203 {
+    border: 0 none;
+    width: 10%;
+}
+.CLASS22204 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    color: white;
+    cursor: pointer;
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+}
+.CLASS22205 {
+    border: 0 none;
+    width: 90%;
+}
+.CLASS22206 {
+    color: red;
+    font-weight: bold;
+    height: 100%;
+    margin-top: 6px;
+    text-align: center;
+}
+.CLASS22207 {
+    border: 0 none;
+    width: 80%;
+}
+.CLASS22300 {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+.CLASS22301 {
+    text-align: center;
+}
+.CLASS22302 {
+    height: 50%;
+}
+.CLASS22303 {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 16px;
+    text-align: center;
+}
+.CLASS22304 {
+    height: 100%;
+    width: 100%;
+}
+.CLASS22305 {
+    height: 98%;
+}
+.CLASS22306 {
+    color: #000000;
+    vertical-align: top;
+}
+.CLASS22307 {
+    background-color: #9BA6BF;
+    color: #000000;
+    overflow: auto;
+    padding-bottom: 20px;
+    visibility: hidden;
+}
+.CLASS22308 {
+    margin-top: 20px;
+}
+.CLASS22309 {
+    border: 1px solid #000000;
+    margin: 0;
+}
+.CLASS22310 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    height: 30px;
+    text-align: center;
+    width: 580px;
+}
+.CLASS22311 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    height: 5px;
+    width: 580px;
+}
+.CLASS22312 {
+    background-color: #F0F0F0;
+    border: 1px solid #000000;
+    color: #000000;
+    height: 120px;
+    width: 580px;
+}
+.CLASS22313 {
+    background-color: #5D6373;
+    border: 1px solid #000000;
+    height: 5px;
+    width: 580px;
+}
+#ic_ic_deviceparameters .SetProfLinkTbl {
+    border: 1px solid #000000;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 99%;
+}
+#ic_deviceparameters .SetProfLinkTbl thead {
+    background-color: #5D6373;
+    text-align: center;
+}
+#ic_deviceparameters .SetProfLinkTbl tbody {
+    background-color: #9BA6BF;
+    color: #000000;
+}
+#ic_deviceparameters .SetProfLinkTbl .BlueHeader {
+    background-color: #3678C9;
+}
+#ic_deviceparameters .SetProfLinkTbl .WhiteHeader {
+    background-color: #F0F0F0;
+}
+#ic_deviceparameters .SetProfLinkTbl .WhiteHeader input {
+    width: 100%;
+}
+#ic_deviceparameters .SetProfLinkTbl td {
+    border: 1px solid #000000;
+}
+#ic_deviceparameters .SetProfLinkTbl .SetProfLinkTbl_Buttons {
+    border: 0 none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#ic_deviceparameters .SetProfLinkTbl .SetProfLinkTbl_Buttons td {
+    border: 0 none;
+}
+#ic_deviceparameters .SetProfLinkTbl .ProfileTbl {
+    background-color: transparent;
+    border: 0 none;
+    color: #000000;
+    height: auto;
+    margin: 0;
+    text-align: left;
+    vertical-align: top;
+    width: auto;
+}
+#ic_deviceparameters .SetProfLinkTbl .ProfileTbl thead {
+    background-color: transparent;
+    height: auto;
+    text-align: left;
+}
+#ic_deviceparameters .SetProfLinkTbl .ProfileTbl thead tr {
+    height: auto;
+}
+#ic_deviceparameters .SetProfLinkTbl .ProfileTbl tbody {
+    background-color: transparent;
+    color: #000000;
+}
+#ic_deviceparameters .SetProfLinkTbl .ProfileTbl td {
+    border: 0 none;
+}
+#ic_deviceparameters .SetProfLinkTbl .easymode_wrapper {
+}
+#ic_deviceparameters #body_wrapper {
+    background-color: #182C6E;
+    margin-top: 10px;
+}
+#ic_deviceparameters #id_sender_group_receiver_profiles_wrapper {
+    background-color: #182C6E;
+    margin-top: 10px;
+}
+*[id^='side']{
+    line-height: 20px;
+    margin-left: 30px;
+    text-align: left;
+    background-color: #faffc5;
+    width: 29.7cm;
+    word-wrap: break-word;
+}
