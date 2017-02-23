@@ -1,9 +1,43 @@
 #!/bin/sh
 
-mkdir /mnt
-mount -t ubifs ubi1:user /mnt
+RC_DIR=/usr/local/etc/config/rc.d
+WWW_DIR=/usr/local/etc/config/addons/www/print
+ADDON_DIR=/usr/local/etc/config/addons/print
 
-cp -R script /mnt/etc/config/addons/www/
-cp -p programmedrucken /mnt/etc/config/rc.d/
+# mount /usr/local if not already mounted
+mount | grep /usr/local 2>&1 >/dev/null
+if [ $? -eq 1 ]; then
+  mount /usr/local
+fi
 
-umount /mnt
+# Startscript anlegen
+cp -af rc.d/programmedrucken ${RC_DIR}/
+chmod +x ${RC_DIR}/programmedrucken
+
+# Web-Konfiguration anlegen
+mkdir -p ${WWW_DIR}
+cp -af www/* ${WWW_DIR}
+chmod 755 ${WWW_DIR}
+
+# Addon-Verzeichnis anlegen
+mkdir -p ${ADDON_DIR}
+cp -af addon/* ${ADDON_DIR}
+chmod 755 ${ADDON_DIR}
+
+# Symbolic Links
+rm -f ${WWW_DIR}/VERSION.txt
+ln -sf ${ADDON_DIR}/VERSION ${WWW_DIR}/VERSION.txt
+rm -f ${WWW_DIR}/addon
+ln -sf ${ADDON_DIR} ${WWW_DIR}/addon
+
+# sync filesystem to make sure all changes are written to disk
+sync
+
+# OLD
+#mkdir /mnt
+#mount -t ubifs ubi1:user /mnt
+
+#cp -R script /mnt/etc/config/addons/www/
+#cp -p programmedrucken /mnt/etc/config/rc.d/
+
+#umount /mnt
