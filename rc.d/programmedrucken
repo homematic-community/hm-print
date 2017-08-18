@@ -19,7 +19,7 @@ RCGISTRINGZWO="<td align='center' valign='middle'><div class='FooterButton' oncl
 
 # String to include the overview print button in "Direkte Verknüpfungen"
 SOVERDVCGI="<td align='center' valign='middle'><div class='FooterButton CLASS22100' onclick='loadNewLinkPage();' >\\\\\"+ translateKey('footerBtnNewLink') +\\\\\"</div></td>\\\\\";"
-ROVERDVCGI="<td align='center' valign='middle'><div class='FooterButton CLASS22100' onclick='loadNewLinkPage();' >\\\\\"+ translateKey('footerBtnNewLink') +\\\\\"</div></td></td><td align='center' valign='middle'><div class='FooterButton CLASS04906' onclick='PrintAllDV();'>Uebersicht Drucken</div></td>\\\\\";"
+ROVERDVCGI="<td align='center' valign='middle'><div class='FooterButton CLASS22100' onclick='loadNewLinkPage();' >\\\\\"+ translateKey('footerBtnNewLink') +\\\\\"</div></td></td><td align='center' valign='middle'><div class='FooterButton CLASS04906' onclick='PrintAllDV();'>\&Uuml;bersicht Drucken</div></td>\\\\\";"
 
 # String to include the print button in "Geräteparameter"
 SDEVPARACGI="<td align='center' valign='middle'><div class='FooterButton' onclick='CloseDeviceParameters();'>\\\\\"+translateKey('footerBtnCancel')+\\\\\"</div></td>\\\\\";"
@@ -27,7 +27,7 @@ RDEVPARACGI="<td align='center' valign='middle'><div class='FooterButton' onclic
 
 # String to include the print buttons for "Programme"
 SPROGLISTSTRING="<td align='center' valign='middle'><div class='FooterButton CLASS04906' onclick='new HMScriptExecutor();' >\"+translateKey('footerBtnTestScript')+ \"</div></td>"
-RPROGLISTSTRING="<td align='center' valign='middle'><div class='FooterButton CLASS04906' onclick='new HMScriptExecutor();' >\"+translateKey('footerBtnTestScript')+ \"</div></td><td align='center' valign='middle'><div class='FooterButton CLASS04906' onclick='PrintAllPrograms();'>Drucken</div></td><td align='center' valign='middle'><div class='FooterButton CLASS04906' onclick='PrintAllSysPrograms();'>Drucken + Intere</div></td>"
+RPROGLISTSTRING="<td align='center' valign='middle'><div class='FooterButton CLASS04906' onclick='new HMScriptExecutor();' >\"+translateKey('footerBtnTestScript')+ \"</div></td><td align='center' valign='middle'><div class='FooterButton CLASS04906' onclick='PrintAllPrograms();'>Drucken</div></td><td align='center' valign='middle'><div class='FooterButton CLASS04906' onclick='PrintAllSysPrograms();'>Drucken inkl. Interne</div></td>"
 
 # String to include the print button in single "Programm"
 SSTRING="<td align='center' valign='middle'><div class='FooterButton CLASS04801' onclick='new HMScriptExecutor();'>\${footerBtnTestScript}</div></td>"
