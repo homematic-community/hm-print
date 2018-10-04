@@ -1,5 +1,5 @@
 # hm-print
-A fork of the HomeMatic CCU Addon "ProgrammeDrucken" from http://homematic-forum.de/forum/viewtopic.php?f=41&amp;t=19296
+A fork of the HomeMatic CCU Addon "ProgrammeDrucken" from https://homematic-forum.de/forum/viewtopic.php?f=41&t=19296
 
 ## Supported CCU models
 * [HomeMatic CCU3](https://www.eq-3.de/produkte/homematic/zentralen-und-gateways/smart-home-zentrale-ccu3.html) / [RaspberryMatic](http://raspberrymatic.de/)
