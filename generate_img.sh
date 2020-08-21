@@ -1,12 +1,20 @@
 #!/bin/sh
-mkdir -p tmp
-cp -a programmedrucken tmp/
+COPYFILE_DISABLE=1; export COPYFILE_DISABLE
+rm -f *.tar.gz
+
+mkdir -p tmp/addon/
 cp -a update_script tmp/
-cp -a addon tmp/
 cp -a rc.d tmp/
 cp -a www tmp/
 cp -a VERSION tmp/addon/
 cd tmp
-tar --owner=root --group=root --exclude=.DS_Store -czvf ../hm-print-$(cat ../VERSION).tar.gz *
+chmod +x update_script
+
+find . -name ".DS_Store" -exec rm -rf {} \;
+find . -name "._*" -exec rm -rf {} \;
+dot_clean .
+
+tar  -zcf ../hm-print-$(cat ../VERSION).tar.gz * 
+
 cd ..
 rm -rf tmp
