@@ -157,8 +157,9 @@ case "$1" in
 	info)
     echo "Info: <b>Programmedrucken</b><br>"
 	echo "Info: <b>CCU2 & RaspberryMatic</b><br>"
-	echo "Info: (c) 2010-2017 HMside, anli<br>"
-	echo "Info: <a href='https://github.com/litti/hm-print'>Projekt on Github</a>"
+	echo "Info: (c) 2010-2017 HMside, anli<br><br>"
+	echo "Info: (c) 2020 modified by jp112sdl for 3.53.xx<br>"
+	echo "Info: <a href='https://github.com/jp112sdl/hm-print'>Fork on Github</a>"
     echo "Version: $(cat ${ADDON_DIR}/VERSION)"
     echo "Name: Programmedrucken"
     echo "Operations: uninstall"
