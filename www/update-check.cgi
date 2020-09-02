@@ -1,7 +1,7 @@
 #!/bin/tclsh
 
-set checkURL    "https://raw.githubusercontent.com/litti/hm-print/master/VERSION"
-set downloadURL "https://github.com/litti/hm-print/releases"
+set checkURL    "https://raw.githubusercontent.com/jp112sdl/hm-print/master/VERSION"
+set downloadURL "https://github.com/jp112sdl/hm-print/releases"
 
 catch {
   set input $env(QUERY_STRING)
