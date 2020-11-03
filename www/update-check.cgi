@@ -1,7 +1,7 @@
 #!/bin/tclsh
 
-set checkURL    "https://raw.githubusercontent.com/litti/hm-print/master/VERSION"
-set downloadURL "https://github.com/litti/hm-print/releases"
+set checkURL    "https://raw.githubusercontent.com/homematic-community/hm-print/master/VERSION"
+set downloadURL "https://github.com/homematic-community/hm-print/releases"
 
 catch {
   set input $env(QUERY_STRING)
