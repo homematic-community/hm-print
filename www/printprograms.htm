@@ -25,7 +25,7 @@ if (location.search)
 getPrograms = function()
 {
   var req = xhr.create();
-  req.open("POST", "exec.cgi", false);
+  req.open("POST", "exec.cgi?sid="+SessionId, false);
   
   var s  = "string s_prgID;";
       s += "object oPrg;";
@@ -75,7 +75,7 @@ getPrograms = function()
 		      /*p += "  system.SetSessionVar(\"tmpPrgIDAL\", oPrg.ID());";
 		      p += "  Call(\"/esp/PrintPrograms.fn::PrintProgram()\")";*/
 		  
-		  /*req.open("POST", "exec.cgi", false);
+		  /*req.open("POST", "exec.cgi?sid="+SessionId, false);
 		  req.send(p);
 			document.write(getStdout(req.responseText));*/
 			document.write(p);
