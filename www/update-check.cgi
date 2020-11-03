@@ -1,7 +1,7 @@
 #!/bin/tclsh
 
-set checkURL    "https://raw.githubusercontent.com/litti/hm-print/master/VERSION"
-set downloadURL "https://github.com/litti/hm-print/releases"
+set checkURL    "https://raw.githubusercontent.com/jp112sdl/hm-print/master/VERSION"
+set downloadURL "https://github.com/jp112sdl/hm-print/releases"
 
 catch {
   set input $env(QUERY_STRING)
@@ -14,8 +14,10 @@ catch {
 }
 
 if { [info exists cmd ] && $cmd == "download"} {
-  puts "<meta http-equiv='refresh' content='0; url=$downloadURL' />"
+  puts -nonewline "Content-Type: text/html; charset=utf-8\r\n\r\n"
+  puts -nonewline "<html><head><meta http-equiv='refresh' content='0; url=$downloadURL' /></head><body></body></html>"
 } else {
+  puts -nonewline "Content-Type: text/plain; charset=utf-8\r\n\r\n"
   catch {
     set newversion [ exec /usr/bin/wget -qO- --no-check-certificate $checkURL ]
   }

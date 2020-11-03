@@ -33,11 +33,6 @@ ln -sf ${ADDON_DIR} ${WWW_DIR}/addon
 # sync filesystem to make sure all changes are written to disk
 sync
 
-# OLD
-#mkdir /mnt
-#mount -t ubifs ubi1:user /mnt
-
-#cp -R script /mnt/etc/config/addons/www/
-#cp -p programmedrucken /mnt/etc/config/rc.d/
-
-#umount /mnt
+if [ "$1" = "HM-RASPBERRYMATIC" ]; then
+  /etc/config/rc.d/programmedrucken start
+fi
