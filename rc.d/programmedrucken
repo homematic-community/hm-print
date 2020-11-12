@@ -78,177 +78,152 @@ RSTRING="<td align='center' valign='middle'><div class='FooterButton CLASS04801'
 fi
 
 case "$1" in
-""|start)
+  ""|start)
+    mount -o rw,remount /
 
-      if [ -e /www/config/ic_deviceparameters.cgi_tmp ]; then
-            echo "Temporary file /www/config/ic_deviceparameters.cgi_tmp does exist. Delete it..."
-	     mount -o rw,remount /
-	     rm -rf /www/config/ic_deviceparameters.cgi_tmp
-	     mount -o ro,remount /
-	  fi
+    if [ -e /www/config/ic_deviceparameters.cgi_tmp ]; then
+      echo "Temporary file /www/config/ic_deviceparameters.cgi_tmp does exist. Delete it..."
+      rm -rf /www/config/ic_deviceparameters.cgi_tmp
+    fi
 
-	  if [ ! -e /www/config/ic_deviceparameters.cgi_org ]; then
-            echo "File /www/config/ic_deviceparameters.cgi_org does not exist. Copying it..."
-	     mount -o rw,remount /
-	     mv /www/config/ic_deviceparameters.cgi /www/config/ic_deviceparameters.cgi_org
-	     sed -e "s|$SCGISTRING|$RCGISTRING|g" "/www/config/ic_deviceparameters.cgi_org" > "/www/config/ic_deviceparameters.cgi_tmp"
-	     sed -e "s|$SDEVPARACGI|$RDEVPARACGI|g" "/www/config/ic_deviceparameters.cgi_tmp" > "/www/config/ic_deviceparameters.cgi"
-	     rm -rf /www/config/ic_deviceparameters.cgi_tmp
-            chmod 755 /www/config/ic_deviceparameters.cgi
-	     mount -o ro,remount /
-	  fi
+    if [ ! -e /www/config/ic_deviceparameters.cgi_org ]; then
+      echo "File /www/config/ic_deviceparameters.cgi_org does not exist. Copying it..."
+      mv /www/config/ic_deviceparameters.cgi /www/config/ic_deviceparameters.cgi_org
+      sed -e "s|$SCGISTRING|$RCGISTRING|g" "/www/config/ic_deviceparameters.cgi_org" > "/www/config/ic_deviceparameters.cgi_tmp"
+      sed -e "s|$SDEVPARACGI|$RDEVPARACGI|g" "/www/config/ic_deviceparameters.cgi_tmp" > "/www/config/ic_deviceparameters.cgi"
+      rm -rf /www/config/ic_deviceparameters.cgi_tmp
+      chmod 755 /www/config/ic_deviceparameters.cgi
+    fi
 
-	  if [ -e /www/config/ic_linkpeerlist.cgi_tmp ]; then
-            echo "Temporary file /www/config/ic_linkpeerlist.cgi_tmp does exist. Delete it..."
-	     mount -o rw,remount /
-	     rm -rf /www/config/ic_linkpeerlist.cgi_tmp
-	     mount -o ro,remount /
-	  fi
+    if [ -e /www/config/ic_linkpeerlist.cgi_tmp ]; then
+      echo "Temporary file /www/config/ic_linkpeerlist.cgi_tmp does exist. Delete it..."
+      rm -rf /www/config/ic_linkpeerlist.cgi_tmp
+    fi
 
-	  if [ ! -e /www/config/ic_linkpeerlist.cgi_org ]; then
-            echo "File /www/config/ic_linkpeerlist.cgi_org does not exist. Copying it..."
-	     mount -o rw,remount /
-	     mv /www/config/ic_linkpeerlist.cgi /www/config/ic_linkpeerlist.cgi_org
-	     sed -e "s|$SCGISTRING|$RCGISTRING|g" "/www/config/ic_linkpeerlist.cgi_org" > "/www/config/ic_linkpeerlist.cgi_tmp"
-	     sed -e "s|$SOVERDVCGI|$ROVERDVCGI|g" "/www/config/ic_linkpeerlist.cgi_tmp" > "/www/config/ic_linkpeerlist.cgi"
-	     rm -rf /www/config/ic_linkpeerlist.cgi_tmp
-            chmod 755 /www/config/ic_linkpeerlist.cgi
-	     mount -o ro,remount /
-	  fi
-	  
-	  if [ -e /www/config/ic_setprofiles.cgi_tmp ]; then
-            echo "Temporary file /www/config/ic_setprofiles.cgi_tmp does exist. Delete it..."
-	     mount -o rw,remount /
-	     rm -rf /www/config/ic_setprofiles.cgi_tmp
-	     mount -o ro,remount /
-	  fi
+    if [ ! -e /www/config/ic_linkpeerlist.cgi_org ]; then
+      echo "File /www/config/ic_linkpeerlist.cgi_org does not exist. Copying it..."
+      mv /www/config/ic_linkpeerlist.cgi /www/config/ic_linkpeerlist.cgi_org
+      sed -e "s|$SCGISTRING|$RCGISTRING|g" "/www/config/ic_linkpeerlist.cgi_org" > "/www/config/ic_linkpeerlist.cgi_tmp"
+      sed -e "s|$SOVERDVCGI|$ROVERDVCGI|g" "/www/config/ic_linkpeerlist.cgi_tmp" > "/www/config/ic_linkpeerlist.cgi"
+      rm -rf /www/config/ic_linkpeerlist.cgi_tmp
+      chmod 755 /www/config/ic_linkpeerlist.cgi
+    fi
 
-	  if [ ! -e /www/config/ic_setprofiles.cgi_org ]; then
-            echo "File /www/config/ic_setprofiles.cgi_org does not exist. Copying it..."
-	     mount -o rw,remount /
-	     mv /www/config/ic_setprofiles.cgi /www/config/ic_setprofiles.cgi_org
-	     sed -e "s|$SCGISTRING|$RCGISTRING|g" "/www/config/ic_setprofiles.cgi_org" > "/www/config/ic_setprofiles.cgi_tmp"
-	     sed -e "s|$SCGISTRINGZWO|$RCGISTRINGZWO|g" "/www/config/ic_setprofiles.cgi_tmp" > "/www/config/ic_setprofiles.cgi"
-	     rm -rf /www/config/ic_setprofiles.cgi_tmp
-            chmod 755 /www/config/ic_setprofiles.cgi
-	     mount -o ro,remount /
-	  fi
+    if [ -e /www/config/ic_setprofiles.cgi_tmp ]; then
+      echo "Temporary file /www/config/ic_setprofiles.cgi_tmp does exist. Delete it..."
+      rm -rf /www/config/ic_setprofiles.cgi_tmp
+    fi
 
-	  if [ -e /www/rega/pages/tabs/admin/views/programlist.htm_tmp ]; then
-	     echo "Temporary file /www/rega/pages/tabs/admin/views/programlist.htm_tmp does exist. Delete it..."
-	     mount -o rw,remount /
-	     rm -rf /www/rega/pages/tabs/admin/views/programlist.htm_tmp
-	     mount -o ro,remount /
-	  fi
+    if [ ! -e /www/config/ic_setprofiles.cgi_org ]; then
+      echo "File /www/config/ic_setprofiles.cgi_org does not exist. Copying it..."
+      mv /www/config/ic_setprofiles.cgi /www/config/ic_setprofiles.cgi_org
+      sed -e "s|$SCGISTRING|$RCGISTRING|g" "/www/config/ic_setprofiles.cgi_org" > "/www/config/ic_setprofiles.cgi_tmp"
+      sed -e "s|$SCGISTRINGZWO|$RCGISTRINGZWO|g" "/www/config/ic_setprofiles.cgi_tmp" > "/www/config/ic_setprofiles.cgi"
+      rm -rf /www/config/ic_setprofiles.cgi_tmp
+      chmod 755 /www/config/ic_setprofiles.cgi
+    fi
 
-	  if [ ! -e /www/rega/pages/tabs/admin/views/programlist.org1 ]; then
-	     echo "File /www/rega/pages/tabs/admin/views/programlist.org1 does not exist. Copying it..."
-	     mount -o rw,remount /
-	     mv /www/rega/pages/tabs/admin/views/programlist.htm /www/rega/pages/tabs/admin/views/programlist.org1
-	     sed -e "s|$SPROGLISTSTRING|$RPROGLISTSTRING|g" "/www/rega/pages/tabs/admin/views/programlist.org1" > "/www/rega/pages/tabs/admin/views/programlist.htm_tmp"
-	     sed -e "s|$SSTRINGZWO|$RSTRINGZWO|g" "/www/rega/pages/tabs/admin/views/programlist.htm_tmp" > "/www/rega/pages/tabs/admin/views/programlist.htm"
-            chmod 755 /www/rega/pages/tabs/admin/views/programlist.htm
-	     rm -rf /www/rega/pages/tabs/admin/views/programlist.htm_tmp
-	     mount -o ro,remount /
-	  fi
+    if [ -e /www/rega/pages/tabs/admin/views/programlist.htm_tmp ]; then
+       echo "Temporary file /www/rega/pages/tabs/admin/views/programlist.htm_tmp does exist. Delete it..."
+       rm -rf /www/rega/pages/tabs/admin/views/programlist.htm_tmp
+    fi
 
-	  if [ -e /www/rega/pages/tabs/admin/views/programs.htm_tmp ]; then
-	     echo "Temporary file /www/rega/pages/tabs/admin/views/programs.htm_tmp does exist. Delete it..."
-	     mount -o rw,remount /
-	     rm -rf /www/rega/pages/tabs/admin/views/programs.htm_tmp
-	     mount -o ro,remount /
-	  fi
+    if [ ! -e /www/rega/pages/tabs/admin/views/programlist.org1 ]; then
+      echo "File /www/rega/pages/tabs/admin/views/programlist.org1 does not exist. Copying it..."
+      mv /www/rega/pages/tabs/admin/views/programlist.htm /www/rega/pages/tabs/admin/views/programlist.org1
+      sed -e "s|$SPROGLISTSTRING|$RPROGLISTSTRING|g" "/www/rega/pages/tabs/admin/views/programlist.org1" > "/www/rega/pages/tabs/admin/views/programlist.htm_tmp"
+      sed -e "s|$SSTRINGZWO|$RSTRINGZWO|g" "/www/rega/pages/tabs/admin/views/programlist.htm_tmp" > "/www/rega/pages/tabs/admin/views/programlist.htm"
+      chmod 755 /www/rega/pages/tabs/admin/views/programlist.htm
+      rm -rf /www/rega/pages/tabs/admin/views/programlist.htm_tmp
+    fi
 
-	  if [ -e /www/rega/pages/tabs/admin/views/programs.org ]; then
-	     echo "File /www/rega/pages/tabs/admin/views/programs.org does exist. Restore it..."
-	     mount -o rw,remount /
-	     rm -rf /www/rega/pages/tabs/admin/views/programs.htm
-	     mv /www/rega/pages/tabs/admin/views/programs.org /www/rega/pages/tabs/admin/views/programs.htm
-	     mount -o ro,remount /
-	  fi
+    if [ -e /www/rega/pages/tabs/admin/views/programs.htm_tmp ]; then
+      echo "Temporary file /www/rega/pages/tabs/admin/views/programs.htm_tmp does exist. Delete it..."
+      rm -rf /www/rega/pages/tabs/admin/views/programs.htm_tmp
+    fi
 
-	  if [ ! -e /www/rega/pages/tabs/admin/views/programs.org1 ]; then
-	     echo "File /www/rega/pages/tabs/admin/views/programs.org1 does not exist. Copying it..."
-	     mount -o rw,remount /
-	     mv /www/rega/pages/tabs/admin/views/programs.htm /www/rega/pages/tabs/admin/views/programs.org1
-	     sed -e "s|$SSTRING|$RSTRING|g" "/www/rega/pages/tabs/admin/views/programs.org1" > "/www/rega/pages/tabs/admin/views/programs.htm_tmp"
-	     sed -e "s|$SSTRINGZWO|$RSTRINGZWO|g" "/www/rega/pages/tabs/admin/views/programs.htm_tmp" > "/www/rega/pages/tabs/admin/views/programs.htm"
-            chmod 755 /www/rega/pages/tabs/admin/views/programs.htm
-	     rm -rf /www/rega/pages/tabs/admin/views/programs.htm_tmp
-	     mount -o ro,remount /
-	  fi
+    if [ -e /www/rega/pages/tabs/admin/views/programs.org ]; then
+      echo "File /www/rega/pages/tabs/admin/views/programs.org does exist. Restore it..."
+      rm -rf /www/rega/pages/tabs/admin/views/programs.htm
+      mv /www/rega/pages/tabs/admin/views/programs.org /www/rega/pages/tabs/admin/views/programs.htm
+    fi
 
-	  if [ ! -e /www/rega/esp/PrintPrograms.fn ]; then
-	     echo "File /www/rega/esp/PrintPrograms.fn does not exist. Copying it..."
-	     mount -o rw,remount /
-	     cp /usr/local/etc/config/addons/www/print/PrintPrograms.fn /www/rega/esp/PrintPrograms.fn
-            chmod 755 /www/rega/esp/PrintPrograms.fn
-	     mount -o ro,remount /
-	  fi
+    if [ ! -e /www/rega/pages/tabs/admin/views/programs.org1 ]; then
+      echo "File /www/rega/pages/tabs/admin/views/programs.org1 does not exist. Copying it..."
+      mv /www/rega/pages/tabs/admin/views/programs.htm /www/rega/pages/tabs/admin/views/programs.org1
+      sed -e "s|$SSTRING|$RSTRING|g" "/www/rega/pages/tabs/admin/views/programs.org1" > "/www/rega/pages/tabs/admin/views/programs.htm_tmp"
+      sed -e "s|$SSTRINGZWO|$RSTRINGZWO|g" "/www/rega/pages/tabs/admin/views/programs.htm_tmp" > "/www/rega/pages/tabs/admin/views/programs.htm"
+      chmod 755 /www/rega/pages/tabs/admin/views/programs.htm
+      rm -rf /www/rega/pages/tabs/admin/views/programs.htm_tmp
+    fi
 
-	  if [ ! -e /www/rega/esp/PrintProgram.htm ]; then
-	     echo "File /www/rega/esp/PrintProgram.htm does not exist. Copying it..."
-	     mount -o rw,remount /
-	     cp /usr/local/etc/config/addons/www/print/PrintProgram.htm /www/rega/esp/PrintProgram.htm
-            chmod 755 /www/rega/esp/PrintProgram.htm
-	     mount -o ro,remount /
-	  fi
-		;;
-	restart|stop)
-		exit 0
+    if [ ! -e /www/rega/esp/PrintPrograms.fn ]; then
+      echo "File /www/rega/esp/PrintPrograms.fn does not exist. Copying it..."
+      cp /usr/local/etc/config/addons/www/print/PrintPrograms.fn /www/rega/esp/PrintPrograms.fn
+      chmod 755 /www/rega/esp/PrintPrograms.fn
+    fi
 
-		;;
-	info)
+    if [ ! -e /www/rega/esp/PrintProgram.htm ]; then
+      echo "File /www/rega/esp/PrintProgram.htm does not exist. Copying it..."
+      cp /usr/local/etc/config/addons/www/print/PrintProgram.htm /www/rega/esp/PrintProgram.htm
+      chmod 755 /www/rega/esp/PrintProgram.htm
+    fi
+
+    mount -o ro,remount /
+    ;;
+  restart|stop)
+    exit 0
+    ;;
+  info)
     echo "Info: <b>Programmedrucken CCU Addon</b><br/>"
     echo "Info: Erzeugt Druckansichten für Programme<br/><br/>"
     echo "Info: (c) 2010-2020 HMside, anli, jp112sdl, jens-maus<br/>"
-    echo "Info: <a href='https://github.com/litti/hm-print'>https://github.com/litti/hm-print</a>"
+    echo "Info: <a href='https://github.com/homematic-community/hm-print'>https://github.com/homematic-community/hm-print</a>"
     echo "Version: $(cat ${ADDON_DIR}/VERSION)"
     echo "Name: Programmedrucken"
     echo "Operations: uninstall"
     echo "Update: /addons/${ADDONNAME}/update-check.cgi"
     ;;
-	uninstall)
-		mount -o rw,remount /
-		
-	  if [ -e /www/rega/pages/tabs/admin/views/programs.org1 ]; then
-			rm -rf /www/rega/pages/tabs/admin/views/programs.htm
-			mv /www/rega/pages/tabs/admin/views/programs.org1 /www/rega/pages/tabs/admin/views/programs.htm
-		fi
-		
-	  if [ -e /www/config/ic_deviceparameters.cgi_org ]; then
-			rm -rf /www/config/ic_deviceparameters.cgi
-			mv /www/config/ic_deviceparameters.cgi_org /www/config/ic_deviceparameters.cgi
-		fi
+  uninstall)
+    mount -o rw,remount /
 
-	  if [ -e /www/config/ic_linkpeerlist.cgi_org ]; then
-			rm -rf /www/config/ic_linkpeerlist.cgi
-			mv /www/config/ic_linkpeerlist.cgi_org /www/config/ic_linkpeerlist.cgi
-		fi
-		
-	  if [ -e /www/config/ic_setprofiles.cgi_org ]; then
-			rm -rf /www/config/ic_setprofiles.cgi
-			mv /www/config/ic_setprofiles.cgi_org /www/config/ic_setprofiles.cgi
-		fi
+    if [ -e /www/rega/pages/tabs/admin/views/programs.org1 ]; then
+      rm -rf /www/rega/pages/tabs/admin/views/programs.htm
+      mv /www/rega/pages/tabs/admin/views/programs.org1 /www/rega/pages/tabs/admin/views/programs.htm
+    fi
 
-	  if [ -e /www/rega/pages/tabs/admin/views/programlist.org1 ]; then
-			rm -rf /www/rega/pages/tabs/admin/views/programlist.htm
-			mv /www/rega/pages/tabs/admin/views/programlist.org1 /www/rega/pages/tabs/admin/views/programlist.htm
-		fi
+    if [ -e /www/config/ic_deviceparameters.cgi_org ]; then
+      rm -rf /www/config/ic_deviceparameters.cgi
+      mv /www/config/ic_deviceparameters.cgi_org /www/config/ic_deviceparameters.cgi
+    fi
 
-		rm -rf /www/rega/esp/PrintPrograms.fn
-		rm -rf /www/rega/esp/PrintProgram.htm
-		rm -rf ${ADDON_DIR}
-		rm -rf ${WWW_DIR}
-		rm -f ${RCD_DIR}/${ADDONNAME}
-		mount -o ro,remount /
- 		;;
-	*)
-        echo "Usage: programmedrucken {info|start|uninstall}" >&2
-        exit 1
-        ;; 
+    if [ -e /www/config/ic_linkpeerlist.cgi_org ]; then
+      rm -rf /www/config/ic_linkpeerlist.cgi
+      mv /www/config/ic_linkpeerlist.cgi_org /www/config/ic_linkpeerlist.cgi
+    fi
 
-esac 
+    if [ -e /www/config/ic_setprofiles.cgi_org ]; then
+      rm -rf /www/config/ic_setprofiles.cgi
+      mv /www/config/ic_setprofiles.cgi_org /www/config/ic_setprofiles.cgi
+    fi
+
+    if [ -e /www/rega/pages/tabs/admin/views/programlist.org1 ]; then
+      rm -rf /www/rega/pages/tabs/admin/views/programlist.htm
+      mv /www/rega/pages/tabs/admin/views/programlist.org1 /www/rega/pages/tabs/admin/views/programlist.htm
+    fi
+
+    rm -rf /www/rega/esp/PrintPrograms.fn
+    rm -rf /www/rega/esp/PrintProgram.htm
+    rm -rf ${ADDON_DIR}
+    rm -rf ${WWW_DIR}
+    rm -f ${RCD_DIR}/${ADDONNAME}
+    mount -o ro,remount /
+    ;;
+  *)
+    echo "Usage: programmedrucken {info|start|uninstall}" >&2
+    exit 1
+    ;;
+
+esac
 
 exit 0
-		
