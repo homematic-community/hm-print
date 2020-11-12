@@ -31,17 +31,17 @@ function _printWindow(element) {
   ClearPage(printWin.document, "ProgramTable");
 }
 
-// √úbersicht der direkten Verkn√ºpfungen drucken
+// ‹bersicht der direkten Verkn¸pfungen drucken
 function PrintAllDV() {
   _printWindow("ic_linkpeerlist")
 }
 
-// Druckt Ger√§te Parameter
+// Druckt Ger‰te Parameter
 function PrintDevPara() {
   _printWindow("ic_deviceparameters")
 }
 
-// Einzelne direkte Verkn√ºpfung drucken
+// Einzelne direkte Verkn¸pfung drucken
 function PrintPage() {
   _printWindow("ic_setprofiles")
 }
@@ -285,7 +285,7 @@ changeNode = function(node) {
                   } \
                   if (iWdays != 0) { \
                     if (iWdays == 96) { Write("am Wochenende (Sa., So.)"); } \
-                    else { Write("jeden Tag, au√üer am Wochenende (Mo. bis Fr.)"); } \
+                    else { Write("jeden Tag, auﬂer am Wochenende (Mo. bis Fr.)"); } \
                   } \
                   if ((iRepVal == 0) && (iWdays == 0)) { \
                     Write("jeden Tag"); \
