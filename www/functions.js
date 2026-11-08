@@ -532,3 +532,72 @@ GetAllSysPrograms = function(id)
   };
   new Ajax.Request(url, opts);
 };
+
+
+// Die optionale Infotext-Druckansicht an der Programmübersicht anbieten.
+(function (w) {
+  'use strict';
+  if (!('SessionId' in w) || w.__HM_PRINT_NOTES__) { return; }
+  w.__HM_PRINT_NOTES__ = true;
+  var d = w.document, anchor = null, generation = 0, queued = false;
+
+  // Die Freigabe beim Infotext-Anbieter erfragen. Ein fehlendes Addon ergibt keine Schaltfläche.
+  function available(done) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '/addons/ewebui/ewebui.cgi', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.timeout = 5000;
+    xhr.onload = function () { done(xhr.status === 200 && xhr.responseText.trim() === 'OK|1'); };
+    xhr.onerror = xhr.ontimeout = function () { done(false); };
+    xhr.send('op=printnotes_status&sid=' + encodeURIComponent(w.SessionId || ''));
+  }
+
+  // Die zusätzliche Druckansicht in einem Browser-Tab öffnen.
+  function openNotes() {
+    var url = '/addons/print/print-notes.html?sid=' + encodeURIComponent(w.SessionId);
+    if (!w.open(url, 'hmPrintNotesWindow')) { w.alert('Bitte Pop-ups fuer die Druckansicht erlauben.'); }
+  }
+
+  // Die Schaltfläche passend zur aktuellen Programmübersicht ein- oder ausblenden.
+  function scan(force) {
+    var next = d.getElementById('ProgramListTable') &&
+      d.querySelector('#footer [onclick*="PrintAllSysPrograms("]');
+    if (!force && next === anchor) { return; }
+    anchor = next;
+    var request = ++generation;
+    if (!next || !w.SessionId) { return; }
+    available(function (enabled) {
+      if (request !== generation || !next.isConnected) { return; }
+      var existing = d.getElementById('pep-print-notes');
+      if (!enabled) {
+        if (existing && existing.dataset.hmPrintNotes) { existing.closest('td').remove(); }
+        return;
+      }
+      if (existing) { return; }
+      var cell = d.createElement('td'), button = d.createElement('button');
+      cell.style.textAlign = 'center';
+      button.type = 'button';
+      button.id = 'pep-print-notes';
+      button.dataset.hmPrintNotes = '1';
+      button.className = 'FooterButton CLASS04906';
+      button.textContent = 'Drucken mit Infotexten';
+      button.addEventListener('click', openNotes);
+      cell.appendChild(button);
+      next.closest('td').after(cell);
+    });
+  }
+
+  // Die neu geladene Fußleiste erst nach den DOM-Änderungen der WebUI prüfen.
+  function schedule() {
+    if (queued) { return; }
+    queued = true;
+    w.setTimeout(function () { queued = false; scan(false); }, 0);
+  }
+
+  new MutationObserver(schedule).observe(d.documentElement, {subtree: true, childList: true});
+  w.addEventListener('focus', function () { scan(true); });
+  w.addEventListener('storage', function (event) {
+    if (event.key === 'ewebui-settings') { scan(true); }
+  });
+  scan(false);
+})(window);
